@@ -1,3 +1,5 @@
+@import "../../public/css/theme.css";
+
 *,
 *::before,
 *:after {
@@ -141,6 +143,25 @@ object {
 object:hover {
     opacity: 1;
 }
+.form-guest .d-flex .input-name input {
+    color: var(--light) !important;
+}
+
+.modal
+    .modal-dialog
+    .modal-content
+    .modal-body
+    .form-guest
+    form
+    .form-floating
+    button:hover {
+    color: var(--light) !important;
+}
+/******* Responsivity ********/
+/*****************************/
+/*****************************/
+/*****************************/
+
 @media (max-width: 640px) {
     .viewport {
         -webkit-transform: scale(0.6, 0.6);

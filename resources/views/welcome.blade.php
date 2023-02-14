@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>C'CaS</title>
+        <title>Lunatika</title>
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -15,12 +15,14 @@
         </style>
 
         <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> --}}
 
         {{-- Fontawesome Kit --}}
         <script src="https://kit.fontawesome.com/028e1f77dd.js" crossorigin="anonymous"></script>
 
         {{-- CSS Reference --}}
+        <link rel="stylesheet" href="{{ asset('css/theme.css') }}">
         <link rel="stylesheet" href="{{ asset('css/home.css') }}">
 
         {{-- Three JS CDN --}}
@@ -54,23 +56,16 @@
 
             {{-- Bottom Navigation --}}
             <nav class="navbar navbar-expand-md align-self-center">
-                <div class="container">
-                    <div class="collapse navbar-collapse d-flex justify-content-between text-center" id="navbarNav">
-                        <ul class="navbar-nav">
-                            {{-- <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="{{ route('pulse') }}">Pulse</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('smartlamp') }}">Smartlamp</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('laravel') }}">Laravel</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Division</a>
-                            </li> --}}
-                        </ul>
-                    </div>
+                <div class="container form-guest">
+                    <form class="d-flex flex-wrap flex-column text-center" id="navbarNav">
+                        <div class="form-floating mb-3 input-name">
+                            <input type="text" class="form-control is-invalid is-guest" id="floatingInput" placeholder="name@example.com" style="background-color: var(--bright-gray); color:var(--light);">
+                            <label for="floatingInput" style="color: var(--gray-chateau);">Guest Name</label>
+                        </div>
+                        <div class="form-floating">
+                            <button type="submit" class="btn btn-primary w-100">Start</button>
+                        </div>
+                    </form>
                 </div>
             </nav>
 
@@ -80,6 +75,7 @@
                 </a> --}}
             </div>
 
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
             {{-- <script src="{{ asset('js/three.min.js') }}"></script> --}}
             {{-- <script src="{{ asset('js/cube3d.js') }}"></script> --}}
             <script type="module">

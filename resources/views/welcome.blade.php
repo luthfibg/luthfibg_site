@@ -21,7 +21,6 @@
         <script src="https://kit.fontawesome.com/028e1f77dd.js" crossorigin="anonymous"></script>
 
         {{-- CSS Reference --}}
-        <link rel="stylesheet" href="{{ asset('css/content-data.css') }}">
         <link rel="stylesheet" href="{{ asset('css/home.css') }}">
 
         {{-- Three JS CDN --}}

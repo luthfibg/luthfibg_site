@@ -19,3 +19,7 @@ Route::get('laravel', function () {
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('luthfi-home', function () {
+    return view('home');
+});

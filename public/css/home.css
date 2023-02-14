@@ -144,7 +144,17 @@ object:hover {
     opacity: 1;
 }
 .form-guest .d-flex .input-name input {
-    height: 2rem !important;
+    color: var(--light) !important;
+}
+
+.modal
+    .modal-dialog
+    .modal-content
+    .modal-body
+    .form-guest
+    form
+    .form-floating
+    button:hover {
     color: var(--light) !important;
 }
 /******* Responsivity ********/

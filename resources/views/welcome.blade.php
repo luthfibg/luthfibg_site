@@ -48,26 +48,42 @@
 
             {{-- Main Title --}}
             <a class="title" href="https://oxigen.web.id/" target="_blank">
-                <h3 class="text-center" style="color: #00bfff;">Welcome Guest!</h3>
+                <h3 class="text-center" style="color: var(--cerulean);">Welcome Guest !</h3>
             </a>
 
             {{-- Canvas Platform --}}
             <canvas class="sketch"></canvas>
 
             {{-- Bottom Navigation --}}
-            <nav class="navbar navbar-expand-md align-self-center">
-                <div class="container form-guest">
-                    <form class="d-flex flex-wrap flex-column text-center" id="navbarNav">
-                        <div class="form-floating mb-3 input-name">
-                            <input type="text" class="form-control is-invalid is-guest" id="floatingInput" placeholder="name@example.com" style="background-color: var(--bright-gray); color:var(--light);">
-                            <label for="floatingInput" style="color: var(--gray-chateau);">Guest Name</label>
-                        </div>
-                        <div class="form-floating">
-                            <button type="submit" class="btn btn-primary w-100">Start</button>
-                        </div>
-                    </form>
-                </div>
+            <nav class="navbar d-flex justify-content-center align-self-center">
+                <i class="fa-regular fa-circle-question fa-xl" style="color: var(--cerulean) !important;" data-bs-toggle="modal" data-bs-target="#gIdentifierModal"></i>
             </nav>
+
+            {{-- Modal --}}
+            <div class="modal fade" tabindex="-1" id="gIdentifierModal">
+                <div class="modal-dialog">
+                  <div class="modal-content" style="background: none;">
+                    {{-- <div class="modal-header bg-dark" style="color: var(--light);">
+                      <h5 class="modal-title">Guest Identifier</h5>
+                      <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div> --}}
+                    <div class="modal-body" style="color: var(--light);background-color: var(--vulcan);border-radius:0.5rem;border: none;">
+                        <div class="container form-guest">
+                            <h5 class="mt-1">Identifier</h5>
+                            <form class="d-flex flex-wrap flex-column text-center mb-3" id="navbarNav">
+                                <div class="form-floating mb-3 input-name">
+                                    <input type="text" class="form-control is-invalid is-guest" id="floatingInput" placeholder="name@example.com" style="background-color: var(--bright-gray); color:var(--light);">
+                                    <label for="floatingInput" style="color: var(--gray-chateau);">Guest Name</label>
+                                </div>
+                                <div class="form-floating">
+                                    <button type="submit" class="btn btn-outline-primary w-100" style="border: 0.03rem solid var(--cerulean); color: var(--cerulean);">Start To Explore</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
             <div class="new-icon">
                 {{-- <a href="{{ route('new') }}">

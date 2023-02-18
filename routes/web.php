@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GuestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +20,9 @@ Route::get('laravel', function () {
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('luthfi-home', function () {
+    return view('home');
+});
+
+Route::resource('guests', GuestController::class);

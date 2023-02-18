@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Guest;
 use Illuminate\Http\Request;
 
+// use Illuminate\Http\Response;
+
 class GuestController extends Controller
 {
     /**
@@ -14,7 +16,8 @@ class GuestController extends Controller
      */
     public function index()
     {
-        //
+        $guest = Guest::all();
+        return view('index', compact('guest'));
     }
 
     /**
@@ -24,7 +27,7 @@ class GuestController extends Controller
      */
     public function create()
     {
-        //
+        return view('create');
     }
 
     /**
@@ -35,7 +38,11 @@ class GuestController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $storeGuest = $request->validate([
+            'name' => 'required|max:255',
+        ]);
+        $guest = Guest::create($storeGuest);
+        return redirect('/index')->with('completed', 'Thank you, guest name has been saved');
     }
 
     /**
@@ -44,7 +51,7 @@ class GuestController extends Controller
      * @param  \App\Models\Guest  $guest
      * @return \Illuminate\Http\Response
      */
-    public function show(Guest $guest)
+    public function show($id)
     {
         //
     }
@@ -55,9 +62,10 @@ class GuestController extends Controller
      * @param  \App\Models\Guest  $guest
      * @return \Illuminate\Http\Response
      */
-    public function edit(Guest $guest)
+    public function edit($id)
     {
-        //
+        $guest = Guest::findOrFail($id);
+        return view('edit', compact('guest'));
     }
 
     /**
@@ -67,9 +75,13 @@ class GuestController extends Controller
      * @param  \App\Models\Guest  $guest
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Guest $guest)
+    public function update(Request $request, $id)
     {
-        //
+        $updateGuest = $request->validate([
+            'name' => 'required|max:255',
+        ]);
+        Guest::whereId($id)->update($updateGuest);
+        return redirect('index')->with('completed', 'Guest name has been updated');
     }
 
     /**
@@ -78,8 +90,10 @@ class GuestController extends Controller
      * @param  \App\Models\Guest  $guest
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Guest $guest)
+    public function destroy($id)
     {
-        //
+        $guest = Guest::findOrFail($id);
+        $guest->delete();
+        return redirect('/index')->with('completed', 'Guest has been deleted');
     }
 }

@@ -17,7 +17,7 @@ class GuestController extends Controller
     public function index()
     {
         $guest = Guest::all();
-        return view('index', compact('guest'));
+        return view('home', compact('guest'));
     }
 
     /**
@@ -42,7 +42,7 @@ class GuestController extends Controller
             'name' => 'required|max:255',
         ]);
         $guest = Guest::create($storeGuest);
-        return redirect('/index')->with('completed', 'Thank you, guest name has been saved');
+        return redirect('/guest')->with('completed', 'Thank you, guest name has been saved');
     }
 
     /**
@@ -81,7 +81,7 @@ class GuestController extends Controller
             'name' => 'required|max:255',
         ]);
         Guest::whereId($id)->update($updateGuest);
-        return redirect('index')->with('completed', 'Guest name has been updated');
+        return redirect('guest')->with('completed', 'Guest name has been updated');
     }
 
     /**
@@ -94,6 +94,6 @@ class GuestController extends Controller
     {
         $guest = Guest::findOrFail($id);
         $guest->delete();
-        return redirect('/index')->with('completed', 'Guest has been deleted');
+        return redirect('/guest')->with('completed', 'Guest has been deleted');
     }
 }

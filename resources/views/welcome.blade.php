@@ -48,7 +48,7 @@
 
             {{-- Main Title --}}
             <a class="title" href="https://oxigen.web.id/" target="_blank">
-                <h3 class="text-center" style="color: var(--cerulean);">Welcome Guest !</h3>
+                <h3 class="text-center" style="color: var(--cerulean);">{{ __('Welcome Guest !') }}</h3>
             </a>
 
             {{-- Canvas Platform --}}
@@ -63,20 +63,21 @@
             <div class="modal fade" tabindex="-1" id="gIdentifierModal">
                 <div class="modal-dialog">
                   <div class="modal-content" style="background: none;">
-                    {{-- <div class="modal-header bg-dark" style="color: var(--light);">
-                      <h5 class="modal-title">Guest Identifier</h5>
-                      <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div> --}}
                     <div class="modal-body" style="color: var(--light);background-color: var(--vulcan);border-radius:0.5rem;border: none;">
                         <div class="container form-guest">
-                            <h5 class="mt-1">Identifier</h5>
-                            <form class="d-flex flex-wrap flex-column text-center mb-3" id="navbarNav">
+                            <h5 class="mt-1">{{ __('Identifier') }}</h5>
+                            <form action="{{ route('guests.store') }}" method="POST" class="d-flex flex-wrap flex-column text-center mb-3 needs-validation" id="navbarNav" novalidate>
+                                @csrf
                                 <div class="form-floating mb-3 input-name">
-                                    <input type="text" class="form-control is-invalid is-guest" id="floatingInput" placeholder="name@example.com" style="background-color: var(--bright-gray); color:var(--light);">
-                                    <label for="floatingInput" style="color: var(--gray-chateau);">Guest Name</label>
+                                    <input type="text" name="guest_name" class="form-control is-invalid is-guest" id="floatingInput" placeholder="name@example.com" style="background-color: var(--bright-gray); color:var(--light);" autocomplete="off">
+                                    <label for="floatingInput" style="color: var(--gray-chateau);">{{ __('Guest Name') }}</label>
+                                    <div class="invalid-feedback">
+                                        {{ __('Please provide your name') }}
+                                    </div>
                                 </div>
+                                @include('components.errors')
                                 <div class="form-floating">
-                                    <button type="submit" class="btn btn-outline-primary w-100" style="border: 0.03rem solid var(--cerulean); color: var(--cerulean);">Start To Explore</button>
+                                    <button type="submit" name="guest_submit" class="btn btn-outline-primary w-100" style="border: 0.03rem solid var(--cerulean); color: var(--cerulean);">{{ __('Start To Explore') }}</button>
                                 </div>
                             </form>
                         </div>
@@ -208,5 +209,7 @@
             </script>
 
         </div>
+
+        <script src="{{ asset('js/input_validate.js') }}"></script>
     </body>
 </html>

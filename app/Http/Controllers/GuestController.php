@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Guest;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 // use Illuminate\Http\Response;
 
@@ -17,7 +18,7 @@ class GuestController extends Controller
     public function index()
     {
         $guest = Guest::all();
-        return view('home', compact('guest'));
+        return response(view('home', compact('guest')));
     }
 
     /**
@@ -27,7 +28,7 @@ class GuestController extends Controller
      */
     public function create()
     {
-        return view('create');
+        return response(view('create'));
     }
 
     /**
@@ -38,11 +39,27 @@ class GuestController extends Controller
      */
     public function store(Request $request)
     {
-        $storeGuest = $request->validate([
-            'name' => 'required|max:255',
+        // $storeGuest = $request->validate([
+        //     'name' => 'required|max:255',
+        // ]);
+        // $guest = Guest::create($storeGuest);
+        // return redirect('/home')->with('completed', 'Thank you, guest name has been saved');
+
+        $validator = Validator::make($request->all(), [
+            'guest_name' => 'required|max:255',
         ]);
-        $guest = Guest::create($storeGuest);
-        return redirect('/guest')->with('completed', 'Thank you, guest name has been saved');
+
+        if ($validator->fails()) {
+            return response(redirect('/')->withInput()->withErrors($validator));
+        }
+
+        $guest = new Guest;
+        $guest->name = $request->guest_name;
+        $request->merge(['name' => $guest->name]);
+        $guest->save();
+
+        return response(redirect()->intended('home')->with('success', 'Guest allowed enter'));
+
     }
 
     /**
@@ -51,10 +68,11 @@ class GuestController extends Controller
      * @param  \App\Models\Guest  $guest
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
-        //
-    }
+    // public function show(Guest $guest)
+    // {
+    //     $guests = Guest::orderBy('created_at', 'asc')->get();
+    //     return response(view('guests.show', compact('guests')));
+    // }
 
     /**
      * Show the form for editing the specified resource.
@@ -65,7 +83,7 @@ class GuestController extends Controller
     public function edit($id)
     {
         $guest = Guest::findOrFail($id);
-        return view('edit', compact('guest'));
+        return response(view('edit', compact('guest')));
     }
 
     /**

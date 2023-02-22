@@ -28,7 +28,7 @@ Route::get('luthfi-home', function () {
 // Route::resource('guests', GuestController::class);
 
 Route::controller(GuestController::class)->group(function () {
-    Route::get('home', 'create')->name('guests.add');
+    Route::get('/', 'create')->name('guests.add');
     // Route::get('home', 'show')->name('guests.show');
     Route::post('/', 'store')->name('guests.store');
     Route::get('home/edit/{guest}', 'edit')->name('guests.edit');

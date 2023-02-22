@@ -23,7 +23,7 @@
 
         {{-- CSS Reference --}}
         <link rel="stylesheet" href="{{ asset('css/theme.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/cover.css') }}">
 
         {{-- Three JS CDN --}}
         {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.144.0/three.min.js" integrity="sha512-a+99cBAt+ou5bThiz5wJeuvXSrZVqZctMU5L8MWaLEc3PB+DPWMK3UycRong0zWYyhavY8HT0YyB/jtJD1S/yQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> --}}

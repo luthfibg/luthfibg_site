@@ -31,10 +31,11 @@
 
   </head>
   <body>
-    <h1>{{ __('Hello, world!') }}</h1>
-
+    {{-- <h1>{{ __('Hello, world!') }}</h1> --}}
+    @include('components.nav')
+    @yield('csl')
     <div class="container">
-        @yield('content-header')
+        @yield('content')
     </div>
 
     {{-- Custom JS --}}

@@ -17,3 +17,37 @@ nav {
     left: 0;
     padding: 2rem 9%;
 }
+
+nav ul li a,
+nav div button {
+    color: var(--cerulean) !important;
+}
+
+nav ul li ul.dropdown-menu {
+    background-color: var(--vulcan);
+    color: var(--ghost);
+}
+
+nav div button {
+    border: 0.08rem solid var(--cerulean) !important;
+    color: var(--cerulean) !important;
+}
+
+nav div button .navbar-toggler-icon {
+    color: var(--cerulean) !important;
+}
+
+nav div form input[type="search"],
+nav div form input[type="search"]:focus {
+    background-color: var(--bright-gray) !important;
+    color: var(--ghost) !important;
+    outline: none !important;
+}
+
+nav div form input[type="search"]:focus {
+    outline-color: none;
+}
+
+nav div form input::placeholder {
+    color: var(--ghost);
+}

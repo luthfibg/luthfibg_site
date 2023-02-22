@@ -66,10 +66,10 @@
                     <div class="modal-body" style="color: var(--light);background-color: var(--vulcan);border-radius:0.5rem;border: none;">
                         <div class="container form-guest">
                             <h5 class="mt-1">{{ __('Identifier') }}</h5>
-                            <form action="{{ route('guests.store') }}" method="POST" class="d-flex flex-wrap flex-column text-center mb-3 needs-validation" id="navbarNav" novalidate>
+                            <form action="{{ route('guests.store', ['guest' => 'Jonathan']) }}" method="POST" class="d-flex flex-wrap flex-column text-center mb-3 needs-validation" id="navbarNav" novalidate>
                                 @csrf
                                 <div class="form-floating mb-3 input-name">
-                                    <input type="text" name="guest_name" class="form-control is-invalid is-guest" id="floatingInput" placeholder="name@example.com" style="background-color: var(--bright-gray); color:var(--light);" autocomplete="off">
+                                    <input type="text" name="guest_name" class="form-control is-invalid is-guest" id="floatingInput" style="background-color: var(--bright-gray); color:var(--ghost);" autocomplete="off">
                                     <label for="floatingInput" style="color: var(--gray-chateau);">{{ __('Guest Name') }}</label>
                                     <div class="invalid-feedback">
                                         {{ __('Please provide your name') }}

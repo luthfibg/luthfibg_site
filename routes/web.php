@@ -30,7 +30,7 @@ Route::get('luthfi-home', function () {
 Route::controller(GuestController::class)->group(function () {
     Route::get('home', 'create')->name('guests.add');
     Route::get('home', 'show')->name('guests.show');
-    Route::post('home', 'store')->name('guests.store');
+    Route::post('home/{guest}', 'store')->name('guests.store');
     Route::get('home/edit/{guest}', 'edit')->name('guests.edit');
     Route::put('home/update/{guest}', 'update')->name('guests.update');
     Route::delete('home/delete/{guest}', 'destroy')->name('guests.delete');

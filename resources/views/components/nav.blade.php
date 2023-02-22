@@ -1,4 +1,4 @@
-  <nav class="navbar is-transparent section nav-section position-fixed z-100 w-100 px-5 d-flex justify-content-between align-items-center">
+  {{-- <nav class="navbar is-transparent section nav-section position-fixed z-100 w-100 px-5 d-flex justify-content-between align-items-center">
     <div class="navbar-brand">
       <a class="navbar-item" href="https://bulma.io">
         <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
@@ -71,7 +71,7 @@
         </div>
       </div>
     </div>
-  </nav>
+  </nav> --}}
 
 {{-- <a href="#" class="logo">Portfolio</a>
   <nav class="navbar">
@@ -82,3 +82,48 @@
     <a href="#contacts" class="">contacts</a>
 </nav> --}}
 
+<nav class="navbar navbar-expand-lg bg-transparent section nav-section px-2 px-md-5 d-flex justify-content-between align-items-center">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">{{ __('Home') }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">{{ __('About') }}</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            {{ __('Service') }}
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">{{ __('Action') }}</a></li>
+            <li><a class="dropdown-item" href="#">{{ __('Another action') }}</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">{{ __('Something else here') }}</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">{{ __('Portfolio') }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">{{ __('Contact') }}</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">{{ __('Go') }}</button>
+      </form>
+    </div>
+    <a href="#" class="py-1 px-2 ms-3 d-flex align-items-center justify-content-between" style="background-color: var(--vulcan);border-radius: 50px;color: var(--cerulean);text-decoration:none;">
+      <div class="icon-user px-2 py-1" style="border: 0.08rem solid var(--cerulean);border-radius:50%;">
+        <i class="fa-regular fa-user fa-sm"></i>
+      </div>
+      <span class="guest-name ms-2" style="font-size: 0.8rem">{{ __('A Guest') }}</span>
+    </a>
+  </div>
+</nav>

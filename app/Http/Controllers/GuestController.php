@@ -18,7 +18,7 @@ class GuestController extends Controller
     public function index()
     {
         $guest = Guest::all();
-        return response(view('home', compact('guest')));
+        return response(view('ports.home', compact('guest')));
     }
 
     /**
@@ -28,7 +28,7 @@ class GuestController extends Controller
      */
     public function create()
     {
-        return response(view('create'));
+        return response(view('pages.home'));
     }
 
     /**
@@ -58,7 +58,7 @@ class GuestController extends Controller
         $request->merge(['name' => $guest->name]);
         $guest->save();
 
-        return response(redirect()->intended('home')->with('success', 'Guest allowed enter'));
+        return response(redirect()->intended('/home')->with('success', 'Guest allowed enter'));
 
     }
 
@@ -68,11 +68,11 @@ class GuestController extends Controller
      * @param  \App\Models\Guest  $guest
      * @return \Illuminate\Http\Response
      */
-    // public function show(Guest $guest)
-    // {
-    //     $guests = Guest::orderBy('created_at', 'asc')->get();
-    //     return response(view('guests.show', compact('guests')));
-    // }
+    public function show(Guest $guest)
+    {
+        $guests = Guest::orderBy('created_at', 'asc')->get();
+        return response(view('pages.home', compact('guests')));
+    }
 
     /**
      * Show the form for editing the specified resource.
@@ -83,7 +83,7 @@ class GuestController extends Controller
     public function edit($id)
     {
         $guest = Guest::findOrFail($id);
-        return response(view('edit', compact('guest')));
+        return response(view('pages.home', compact('guest')));
     }
 
     /**
@@ -99,7 +99,7 @@ class GuestController extends Controller
             'name' => 'required|max:255',
         ]);
         Guest::whereId($id)->update($updateGuest);
-        return redirect('guest')->with('completed', 'Guest name has been updated');
+        return redirect('/pages/home')->with('completed', 'Guest name has been updated');
     }
 
     /**
@@ -112,6 +112,6 @@ class GuestController extends Controller
     {
         $guest = Guest::findOrFail($id);
         $guest->delete();
-        return redirect('/guest')->with('completed', 'Guest has been deleted');
+        return redirect('/pages/home')->with('completed', 'Guest has been deleted');
     }
 }

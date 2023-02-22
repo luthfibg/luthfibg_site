@@ -1,5 +1,7 @@
 :root {
     --light: #eeeeff;
+    --iron: #ced1d6;
+    --ghost: #c7cbd4;
     --gray-chateau: #767d89;
     --raven: #767d89;
     --bright-gray: #3c4452;
@@ -7,4 +9,19 @@
     --vulcan: #10151e;
 
     --cerulean: #00bfff;
+    --crimson: #de1533;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--mirage);
+    color: var(--ghost);
+}
+
+.section {
+    background-color: inherit;
 }

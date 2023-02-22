@@ -25,6 +25,8 @@
 
     {{-- Custom CSS --}}
     <link rel="stylesheet" href="{{ asset('css/preloader.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/nav_style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/headline_style.css') }}">
 
     {{-- Swiper JS --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
@@ -33,7 +35,7 @@
   <body>
     {{-- <h1>{{ __('Hello, world!') }}</h1> --}}
     @include('components.nav')
-    @yield('csl')
+    @yield('hdl')
     <div class="container">
         @yield('content')
     </div>

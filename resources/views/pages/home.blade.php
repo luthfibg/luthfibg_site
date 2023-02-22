@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('csl')
-    @include('components.carousel')
+@section('hdl')
+    @include('components.headline')
 @endsection
 
 @section('content')

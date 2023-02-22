@@ -13,15 +13,20 @@
 }
 
 html {
-    font-size: 62.5%;
+    /* font-size: 62.5%; */
     overflow-x: hidden;
 }
 
-body {
-    background-color: var(--mirage);
-    color: var(--ghost);
-}
+/* body,
+.bg-base {
+    background-color: var(--mirage) !important;
+    color: var(--ghost) !important;
+} */
 
 .section {
     background-color: inherit;
+}
+
+input::placeholder {
+    color: var(--ghost) !important;
 }

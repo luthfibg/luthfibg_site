@@ -39,12 +39,6 @@ class GuestController extends Controller
      */
     public function store(Request $request)
     {
-        // $storeGuest = $request->validate([
-        //     'name' => 'required|max:255',
-        // ]);
-        // $guest = Guest::create($storeGuest);
-        // return redirect('/home')->with('completed', 'Thank you, guest name has been saved');
-
         $validator = Validator::make($request->all(), [
             'guest_name' => 'required|max:255',
         ]);
@@ -58,7 +52,7 @@ class GuestController extends Controller
         $request->merge(['name' => $guest->name]);
         $guest->save();
 
-        return response(redirect()->intended('/home')->with('success', 'Guest allowed enter'));
+        return response(redirect()->intended('/home')->with(['guest' => $guest]));
 
     }
 

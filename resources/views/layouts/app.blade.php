@@ -24,6 +24,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
     {{-- Custom CSS --}}
+    <link rel="stylesheet" href="{{ asset('css/theme.css') }}">
     <link rel="stylesheet" href="{{ asset('css/preloader.css') }}">
     <link rel="stylesheet" href="{{ asset('css/nav_style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/headline_style.css') }}">
@@ -32,7 +33,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
   </head>
-  <body>
+  <body style="background-color: var(--mirage);color: var(--ghost) !important;">
     {{-- <h1>{{ __('Hello, world!') }}</h1> --}}
     @include('components.nav')
     @yield('hdl')
@@ -41,6 +42,7 @@
     </div>
 
     {{-- Custom JS --}}
+    <script src="{{ asset('js/menu-burger.js') }}"></script>
     <script src="{{ asset('js/input_validate.js') }}"></script>
     <script src="{{ asset('js/preloader.js') }}"></script>
     <script src="{{ asset('js/swiper-keyboard.js') }}"></script>

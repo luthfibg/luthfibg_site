@@ -84,7 +84,9 @@
 
 <nav class="navbar navbar-expand-lg bg-transparent section nav-section px-2 px-md-5 d-flex justify-content-between align-items-center">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">
+      <img src="{{ asset('assets/images/logos/lunatika.png') }}" alt="logo" srcset="" style="width: 3rem;height:3rem;">
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -116,14 +118,14 @@
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">{{ __('Go') }}</button>
+        <button class="btn btn-outline-success btn-go" type="submit">{{ __('Go') }}</button>
       </form>
     </div>
-    <a href="#" class="py-1 px-2 ms-3 d-flex align-items-center justify-content-between" style="background-color: var(--vulcan);border-radius: 50px;color: var(--cerulean);text-decoration:none;">
+    <a href="#" class="g-info py-1 px-2 ms-3 d-flex align-items-center justify-content-between" style="background-color: var(--vulcan);border-radius: 50px;color: var(--cerulean);text-decoration:none;">
       <div class="icon-user px-2 py-1" style="border: 0.08rem solid var(--cerulean);border-radius:50%;">
         <i class="fa-regular fa-user fa-sm"></i>
       </div>
-      <span class="guest-name ms-2" style="font-size: 0.8rem">{{ __('A Guest') }}</span>
+      <span class="guest-name ms-2" style="font-size: 0.8rem">{{ __('Guest') }}</span>
     </a>
   </div>
 </nav>

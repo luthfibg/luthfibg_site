@@ -46,6 +46,8 @@
     <script src="{{ asset('js/input_validate.js') }}"></script>
     <script src="{{ asset('js/preloader.js') }}"></script>
     <script src="{{ asset('js/swiper-keyboard.js') }}"></script>
+    <script src="{{ asset('js/parallax.js') }}"></script>
+
 
     {{-- JS Link Referrer --}}
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>

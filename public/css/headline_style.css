@@ -2,5 +2,10 @@
 @import "theme.css";
 
 .headline-section {
-    margin-top: 88px;
+    background: linear-gradient(
+        var(--mirage) 0%,
+        var(--astro-blue) 40%
+    ) !important;
+    min-height: 100vh;
+    overflow-x: hidden;
 }

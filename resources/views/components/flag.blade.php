@@ -1,0 +1,1 @@
+<iframe src="https://giphy.com/embed/DLz5I4BGyRSOlbSC3o" width="398" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/code-software-programming-DLz5I4BGyRSOlbSC3o">via GIPHY</a></p>

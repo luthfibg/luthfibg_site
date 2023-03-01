@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 :root {
+    /* Colors Theme */
     --light: #eeeeff;
     --iron: #ced1d6;
     --ghost: #c7cbd4;
@@ -11,6 +14,32 @@
     --astro-blue: #01435a;
     --cerulean: #00bfff;
     --crimson: #de1533;
+
+    /* Font Theme */
+    --font: "Poppins", sans-serif;
+    --font-thin: 100;
+    --font-xlight: 200;
+    --font-light: 300;
+    --font-medium: 500;
+    --font-sbold: 600;
+    --font-bold: 700;
+    --font-xbold: 800;
+    --font-black: 900;
+    --font-decoration: none;
+    --font-baby: 0.6rem;
+    --font-kid: 0.9rem;
+    --font-xkid: 1.1rem;
+    --font-teen: 1.3rem;
+    --font-younger: 1.65rem;
+    --font-guy: 1.8rem;
+    --font-adult: 2rem;
+    --font-xadult: 2.5rem;
+    --font-big-guy: 3rem;
+    --font-truck: 4rem;
+    --font-xtruck: 5.6rem;
+
+    /* Box Shadow */
+    --box-shadow: 0 0 0.8rem var(--astro-blue);
 }
 
 html {
@@ -32,4 +61,8 @@ html {
 
 input::placeholder {
     color: var(--ghost) !important;
+}
+
+a {
+    text-decoration: var(--font-decoration) !important;
 }

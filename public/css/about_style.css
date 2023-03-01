@@ -1,0 +1,70 @@
+@import "theme.css";
+
+.about-section .about-content h3 {
+    font-size: var(--font-xadult);
+    font-weight: var(--font-bold);
+}
+
+.about-section .about-content h3:nth-of-type(2) {
+    margin-bottom: 1.8rem;
+}
+
+.about-section .about-content h3 span {
+    color: var(--cerulean);
+}
+
+.about-section .about-content h1 {
+    font-size: var(--font-truck);
+    font-weight: var(--font-bold);
+}
+
+.about-section .p-picture img {
+    width: 40vw;
+}
+
+.about-section .about-content p {
+    font-size: var(--font-xkid);
+}
+
+.about-section .about-content .social-medias a {
+    margin-right: 0.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: transparent;
+    border: 0.08rem solid var(--cerulean);
+    border-radius: 50%;
+}
+
+.about-section .about-content .social-medias a:hover {
+    background: var(--cerulean);
+    box-shadow: var(--box-shadow);
+    transition: 0.5s;
+}
+
+.about-section .about-content .social-medias a:hover i {
+    color: var(--mirage);
+}
+
+.about-section .about-content .social-medias a i {
+    font-size: var(--font-teen);
+    color: var(--cerulean);
+}
+
+.about-section .about-content .btn {
+    display: inline-block;
+    background: var(--mirage);
+    color: var(--cerulean);
+    padding: 0.5rem 1.6rem;
+    border-radius: 4rem;
+    box-shadow: var(--box-shadow);
+    font-size: var(--font-teen);
+}
+
+.about-section .about-content .btn:hover {
+    background: var(--cerulean);
+    color: var(--mirage);
+    box-shadow: var(--box-shadow);
+}

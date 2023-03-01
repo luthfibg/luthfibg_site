@@ -27,6 +27,10 @@
     .container {
         margin: initial;
     }
+
+    .about-section .p-picture img {
+        width: 40vw !important;
+    }
 }
 
 /* Laptop */

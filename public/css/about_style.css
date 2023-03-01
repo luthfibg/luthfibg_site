@@ -1,7 +1,7 @@
 @import "theme.css";
 
 .about-section .about-content h3 {
-    font-size: var(--font-xadult);
+    font-size: var(--font-teen);
     font-weight: var(--font-bold);
 }
 
@@ -14,25 +14,25 @@
 }
 
 .about-section .about-content h1 {
-    font-size: var(--font-truck);
+    font-size: var(--font-adult);
     font-weight: var(--font-bold);
 }
 
 .about-section .p-picture img {
-    width: 40vw;
+    width: 100vw;
 }
 
 .about-section .about-content p {
-    font-size: var(--font-xkid);
+    font-size: var(--font-kid);
 }
 
 .about-section .about-content .social-medias a {
-    margin-right: 0.5rem;
+    margin-right: 0.2rem;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
     background: transparent;
     border: 0.08rem solid var(--cerulean);
     border-radius: 50%;
@@ -49,7 +49,7 @@
 }
 
 .about-section .about-content .social-medias a i {
-    font-size: var(--font-teen);
+    font-size: var(--font-xkid);
     color: var(--cerulean);
 }
 
@@ -60,7 +60,7 @@
     padding: 0.5rem 1.6rem;
     border-radius: 4rem;
     box-shadow: var(--box-shadow);
-    font-size: var(--font-teen);
+    font-size: var(--font-kid);
 }
 
 .about-section .about-content .btn:hover {

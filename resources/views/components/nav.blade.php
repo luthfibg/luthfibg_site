@@ -82,7 +82,7 @@
     <a href="#contacts" class="">contacts</a>
 </nav> --}}
 
-<nav class="navbar navbar-expand-lg bg-transparent section nav-section px-2 px-md-5 d-flex justify-content-between align-items-center">
+<nav class="navbar navbar-expand-lg bg-transparent nav-section px-2 px-md-5 d-flex justify-content-between align-items-center">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img src="{{ asset('assets/images/logos/lunatika.png') }}" alt="logo" srcset="" style="width: 3rem;height:3rem;">

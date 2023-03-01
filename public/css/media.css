@@ -1,0 +1,119 @@
+@import "theme.css";
+
+/************************************/
+/************************************/
+/************************************/
+/******** Minimal Screen Size *******/
+/************************************/
+/************************************/
+/************************************/
+
+/* Tablet S */
+@media (min-width: 576px) {
+    .container {
+        margin: initial;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .container {
+        margin: initial;
+    }
+}
+
+/* Laptop S */
+@media (min-width: 992px) {
+    .container {
+        margin: initial;
+    }
+
+    .about-section .p-picture img {
+        width: 40vw !important;
+    }
+}
+
+/* Laptop */
+@media (min-width: 1024px) {
+    .container {
+        margin: initial;
+    }
+}
+
+/* Laptop M */
+@media (min-width: 1200px) {
+    .container {
+        margin: initial;
+    }
+}
+
+/* Laptop L */
+@media (min-width: 1440px) {
+    .container {
+        margin: initial;
+    }
+}
+
+/* 4K Screens */
+@media (min-width: 2560px) {
+    .container {
+        margin: initial;
+    }
+}
+
+/************************************/
+/************************************/
+/************************************/
+/******** Maximal Screen Size *******/
+/************************************/
+/************************************/
+/************************************/
+
+/* Mobile S - L */
+@media (max-width: 576px) {
+    .container {
+        margin: initial;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .container {
+        margin: initial;
+    }
+}
+
+/* Laptop S */
+@media (max-width: 992px) {
+    .container {
+        margin: initial;
+    }
+}
+
+/* Laptop */
+@media (max-width: 1024px) {
+    .container {
+        margin: initial;
+    }
+}
+
+/* Laptop M */
+@media (max-width: 1200px) {
+    .container {
+        margin: initial;
+    }
+}
+
+/* Laptop L */
+@media (max-width: 1440px) {
+    .container {
+        margin: initial;
+    }
+}
+
+/* 4K Screens */
+@media (max-width: 2560px) {
+    .container {
+        margin: initial;
+    }
+}

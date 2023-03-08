@@ -32,7 +32,7 @@
 }
 
 .headline-section .parallax img.guys {
-    top: -5rem !important;
+    /* top: -5rem !important; */
     width: 100%;
 }
 

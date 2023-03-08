@@ -1,7 +1,11 @@
 @extends('layouts.app')
 
-@section('hdl')
+{{-- @section('hdl')
     @include('components.headline')
+@endsection --}}
+
+@section('header')
+    @include('components.header')
 @endsection
 
 @section('content')

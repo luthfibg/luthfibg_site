@@ -31,6 +31,10 @@
     .about-section .p-picture img {
         width: 40vw !important;
     }
+
+    .navbar nav div .collapse ul .nav-item {
+        margin-left: 1rem !important;
+    }
 }
 
 /* Laptop */

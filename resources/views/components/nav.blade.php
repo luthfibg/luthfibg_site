@@ -82,7 +82,7 @@
     <a href="#contacts" class="">contacts</a>
 </nav> --}}
 <div class="navbar navbar-expand-md bg-transparent nav-section d-flex">
-  <nav class="navbar navbar-expand-md bg-transparent w-100 nav-section px-3 d-flex justify-content-between align-items-center">
+  <nav class="navbar navbar-expand-md bg-transparent w-100 nav-section px-0 d-flex justify-content-between align-items-center">
     <div class="container-fluid">
       <a class="navbar-brand logo" href="#">
         Portfolio.
@@ -117,7 +117,7 @@
             <a class="nav-link">{{ __('Contact') }}</a>
           </li>
         </ul>
-        <a href="#" class="g-info py-1 px-2 ms-auto d-flex align-items-center justify-content-between me-3" style="background-color: var(--vulcan);border-radius: 50px;color: var(--cerulean);text-decoration:none;">
+        <a href="#" class="g-info py-1 px-2 ms-auto d-flex align-items-center justify-content-between me-3" style="background-color: transparent;border-radius: 50px;color: var(--cerulean);text-decoration:none;">
           <div class="icon-user px-2 py-1" style="border: 0.08rem solid var(--cerulean);border-radius:50%;">
             <i class="fa-regular fa-user fa-sm"></i>
           </div>

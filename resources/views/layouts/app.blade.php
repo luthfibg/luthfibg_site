@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="{{ asset('css/media.css') }}">
     <link rel="stylesheet" href="{{ asset('css/preloader.css') }}">
     <link rel="stylesheet" href="{{ asset('css/nav_style.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/headline_style.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('css/headline_style.css') }}"> --}}
     <link rel="stylesheet" href="{{ asset('css/about_style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/header.css') }}">
 
@@ -39,11 +39,13 @@
   <body style="background-color: var(--mirage);color: var(--ghost) !important;">
     {{-- <h1>{{ __('Hello, world!') }}</h1> --}}
     @include('components.nav')
-    @yield('header')
-    @yield('content')
+    <div class="container-fluid">
+      @yield('header')
+      @yield('content')
+    </div>
 
     {{-- Custom JS --}}
-    <script src="{{ asset('js/menu-burger.js') }}"></script>
+    {{-- <script src="{{ asset('js/menu-burger.js') }}"></script> --}}
     <script src="{{ asset('js/input_validate.js') }}"></script>
     <script src="{{ asset('js/preloader.js') }}"></script>
     <script src="{{ asset('js/swiper-keyboard.js') }}"></script>

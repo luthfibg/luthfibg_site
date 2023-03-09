@@ -1,4 +1,22 @@
 section {
     min-height: 100vh;
-    padding: 10rem 7% 2rem;
+    /* padding: 10rem 7% 2rem; */
+}
+
+section.home .home-content {
+    max-width: 22rem !important;
+}
+
+section.home .home-content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+section.home .home-content h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+section.home .home-content p {
+    font-size: 0.9rem;
 }

@@ -15,7 +15,7 @@
 nav {
     top: 0;
     left: 0;
-    padding: 2rem 9%;
+    padding: 2rem 5%;
     width: 90%;
 }
 
@@ -90,7 +90,7 @@ nav div a.g-info:hover .icon-user {
 }
 
 nav div #darkMode-icon {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: var(--cerulean);
     cursor: pointer;
 }

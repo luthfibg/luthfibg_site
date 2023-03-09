@@ -20,16 +20,47 @@
     .container {
         margin: initial;
     }
+
+    .container-fluid section.home .home-content {
+        max-width: 30rem !important;
+    }
 }
 
 /* Laptop S */
 @media (min-width: 992px) {
+    /* Global */
     .container {
         margin: initial;
     }
 
-    .about-section .p-picture img {
-        width: 40vw !important;
+    .container-fluid {
+        padding: 0 3rem !important;
+    }
+
+    /* Navbar */
+
+    .navbar nav div .collapse ul .nav-item {
+        margin-left: 1rem !important;
+    }
+
+    /* Home Section */
+
+    .container-fluid section.home .home-content {
+        max-width: 38rem !important;
+    }
+
+    .container-fluid section.home .home-content h3 {
+        font-size: 1.6rem !important;
+        font-weight: 700;
+    }
+
+    .container-fluid section.home .home-content h1 {
+        font-size: 3rem !important;
+        font-weight: 700;
+    }
+
+    .container-fluid section.home .home-content p {
+        font-size: 1.1rem !important;
     }
 }
 
@@ -44,6 +75,9 @@
 @media (min-width: 1200px) {
     .container {
         margin: initial;
+    }
+    .container-fluid section.home .home-content {
+        max-width: 44rem !important;
     }
 }
 

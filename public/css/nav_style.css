@@ -15,7 +15,8 @@
 nav {
     top: 0;
     left: 0;
-    padding: 2rem 9%;
+    padding: 2rem 5%;
+    width: 90%;
 }
 
 nav ul li a,
@@ -30,10 +31,6 @@ nav ul li ul.dropdown-menu {
 
 nav div button {
     border: 0.08rem solid var(--cerulean) !important;
-    color: var(--cerulean) !important;
-}
-
-nav div button .navbar-toggler-icon {
     color: var(--cerulean) !important;
 }
 
@@ -64,4 +61,36 @@ nav div a.g-info:hover {
 
 nav div a.g-info:hover .icon-user {
     border: 0.08rem solid var(--mirage) !important;
+}
+
+.navbar nav div .logo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--bright-gray);
+}
+
+.navbar nav div .collapse ul .nav-item {
+    margin-left: 0;
+    cursor: pointer;
+}
+
+.navbar nav div .collapse ul .nav-item a {
+    font-weight: 200;
+}
+.navbar nav div .collapse ul .nav-item .dropdown-menu li a {
+    transition: 0.3s;
+}
+
+.navbar nav div .collapse ul .nav-item .dropdown-menu li a:hover {
+    background-color: var(--cerulean) !important;
+}
+
+.navbar nav div .collapse ul .nav-item .dropdown-menu li:hover a {
+    color: var(--mirage) !important;
+}
+
+nav div #darkMode-icon {
+    font-size: 1.3rem;
+    color: var(--cerulean);
+    cursor: pointer;
 }

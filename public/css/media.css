@@ -21,8 +21,14 @@
         margin: initial;
     }
 
+    .container-fluid section.home {
+        justify-content: start !important;
+        padding: 0 1rem;
+    }
+
     .container-fluid section.home .home-content {
         max-width: 30rem !important;
+        align-items: start !important;
     }
 }
 
@@ -44,6 +50,10 @@
     }
 
     /* Home Section */
+
+    .container-fluid section.home {
+        padding: 0 0;
+    }
 
     .container-fluid section.home .home-content {
         max-width: 38rem !important;

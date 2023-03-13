@@ -20,3 +20,21 @@ section.home .home-content h1 {
 section.home .home-content p {
     font-size: 0.9rem;
 }
+
+section.home .home-content .social-medias a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: transparent;
+    /* border: 0.08rem solid var(--cerulean); */
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+    color: var(--cerulean);
+    margin: 2rem 0.5rem 1rem 0;
+}
+
+section.home .home-content .social-medias a i {
+    font-size: 1.2rem;
+}

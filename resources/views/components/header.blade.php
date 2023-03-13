@@ -1,6 +1,6 @@
 <section class="home d-flex align-items-center" id="home">
     <div class="home-content">
-        <h3>Hello, I'am</h3>
+        <h3>Halo, Saya</h3>
         <h1>Muhamad Luthfi</h1>
         <p class="short-desc">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, neque. Praesentium possimus, sit ea nulla velit laborum molestiae quod, alias, sapiente quasi omnis aliquam magni? Suscipit tenetur aliquid voluptates laudantium cumque tempora repellat deleniti nemo labore!

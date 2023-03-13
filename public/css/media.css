@@ -27,7 +27,7 @@
     }
 
     .container-fluid section.home .home-content {
-        max-width: 30rem !important;
+        max-width: 45% !important;
         align-items: start !important;
     }
 }
@@ -55,9 +55,9 @@
         padding: 0 0;
     }
 
-    .container-fluid section.home .home-content {
+    /* .container-fluid section.home .home-content {
         max-width: 38rem !important;
-    }
+    } */
 
     .container-fluid section.home .home-content h3 {
         font-size: 1.6rem !important;
@@ -91,6 +91,12 @@
     .container {
         margin: initial;
     }
+
+    section.home .home-content .btn {
+        padding: 0.9rem 2rem !important;
+        font-size: 1.05rem !important;
+        letter-spacing: 0.1rem;
+    }
 }
 
 /* Laptop M */
@@ -99,7 +105,11 @@
         margin: initial;
     }
     .container-fluid section.home .home-content {
-        max-width: 44rem !important;
+        padding-right: 1rem;
+    }
+    section.home .profession-container .profession-box {
+        width: 100% !important;
+        height: 100% !important;
     }
 }
 

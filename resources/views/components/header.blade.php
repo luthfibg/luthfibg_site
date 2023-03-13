@@ -5,7 +5,7 @@
             <h1>Muhamad Luthfi</h1>
         </div>
         <p class="short-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, neque. Praesentium possimus, sit ea nulla velit laborum molestiae quod, alias, sapiente quasi omnis aliquam magni? Suscipit tenetur aliquid voluptates laudantium cumque tempora repellat deleniti nemo labore!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, neque. Praesentium possimus, sit ea nulla velit laborum molestiae quod, alias, sapiente quasi omnis aliquam magni? Suscipit tenetur aliquid voluptates deleniti nemo labore!
         </p>
         <div class="social-medias">
             <a href="">
@@ -25,5 +25,27 @@
             </a>
         </div>
         <a href="http://" class="btn mt-3">Download CV</a>
+    </div>
+    <div class="profession-container">
+        <div class="profession-box d-flex justify-content-center align-items-center">
+            <div class="profession" style="--i:0;">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Developer</h3>
+            </div>
+            <div class="profession" style="--i:1;">
+                <i class="fa-solid fa-terminal"></i>
+                <h3>Mobile Developer</h3>
+            </div>
+            <div class="profession" style="--i:2;">
+                <i class="fa-solid fa-microchip"></i>
+                <h3>IoT Engineer</h3>
+            </div>
+            <div class="profession" style="--i:3;">
+                <i class="fa-regular fa-image"></i>
+                <h3>Content Creator</h3>
+            </div>
+
+            <div class="circle"></div>
+        </div>
     </div>
 </section>

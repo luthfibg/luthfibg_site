@@ -21,8 +21,14 @@
         margin: initial;
     }
 
+    .container-fluid section.home {
+        justify-content: start !important;
+        padding: 0 1rem;
+    }
+
     .container-fluid section.home .home-content {
-        max-width: 30rem !important;
+        max-width: 45% !important;
+        align-items: start !important;
     }
 }
 
@@ -45,9 +51,13 @@
 
     /* Home Section */
 
-    .container-fluid section.home .home-content {
-        max-width: 38rem !important;
+    .container-fluid section.home {
+        padding: 0 0;
     }
+
+    /* .container-fluid section.home .home-content {
+        max-width: 38rem !important;
+    } */
 
     .container-fluid section.home .home-content h3 {
         font-size: 1.6rem !important;
@@ -62,12 +72,30 @@
     .container-fluid section.home .home-content p {
         font-size: 1.1rem !important;
     }
+
+    section.home .home-content .social-medias a {
+        width: 3rem !important;
+        height: 3rem !important;
+        background: transparent;
+        /* border: 0.08rem solid var(--cerulean); */
+        margin: 2rem 0.5rem 1rem 0;
+    }
+
+    section.home .home-content .social-medias a i {
+        font-size: 1.45rem !important;
+    }
 }
 
 /* Laptop */
 @media (min-width: 1024px) {
     .container {
         margin: initial;
+    }
+
+    section.home .home-content .btn {
+        padding: 0.9rem 2rem !important;
+        font-size: 1.05rem !important;
+        letter-spacing: 0.1rem;
     }
 }
 
@@ -77,7 +105,11 @@
         margin: initial;
     }
     .container-fluid section.home .home-content {
-        max-width: 44rem !important;
+        padding-right: 1rem;
+    }
+    section.home .profession-container .profession-box {
+        width: 100% !important;
+        height: 100% !important;
     }
 }
 

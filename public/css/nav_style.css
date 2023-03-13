@@ -17,6 +17,7 @@ nav {
     left: 0;
     padding: 2rem 5%;
     width: 90%;
+    z-index: 999 !important;
 }
 
 nav ul li a,

@@ -27,7 +27,7 @@
         <a href="http://" class="btn mt-3">Download CV</a>
     </div>
     <div class="profession-container">
-        <div class="profession-box d-flex justify-content-center align-items-center">
+        <div class="profession-box d-flex justify-content-center align-items-center p-1">
             <div class="profession" style="--i:0;">
                 <i class="fa-solid fa-code"></i>
                 <h3>Web Developer</h3>
@@ -47,5 +47,6 @@
 
             <div class="circle"></div>
         </div>
+        <div class="overlay"></div>
     </div>
 </section>

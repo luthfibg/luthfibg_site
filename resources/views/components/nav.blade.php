@@ -91,8 +91,8 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <div class="collapse navbar-collapse me-3" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">{{ __('Home') }}</a>
           </li>
@@ -117,14 +117,13 @@
             <a class="nav-link">{{ __('Contact') }}</a>
           </li>
         </ul>
-        <a href="#" class="g-info py-1 px-2 ms-auto d-flex align-items-center justify-content-between me-3" style="background-color: transparent;border-radius: 50px;color: var(--cerulean);text-decoration:none;">
-          <div class="icon-user px-2 py-1" style="border: 0.08rem solid var(--cerulean);border-radius:50%;">
-            <i class="fa-regular fa-user fa-sm"></i>
-          </div>
-          <span class="guest-name ms-2" style="font-size: 0.8rem">{{ __('Guest') }}</span>
-        </a>
-        <div class="fa-regular fa-moon" id="darkMode-icon"></div>
       </div>
-    </div>
+      <a href="#" class="g-info py-1 px-2 ms-auto d-flex align-items-center justify-content-between me-3" style="background-color: transparent;border-radius: 50px;color: var(--cerulean);text-decoration:none;">
+        <div class="icon-user px-2 py-1" style="border: 0.08rem solid var(--cerulean);border-radius:50%;">
+          <i class="fa-regular fa-user fa-sm"></i>
+        </div>
+        <span class="guest-name ms-2" style="font-size: 0.8rem">{{ __('Guest') }}</span>
+      </a>
+      <div class="fa-regular fa-moon" id="darkMode-icon"></div>    </div>
   </nav>
 </div>

@@ -70,3 +70,21 @@ input::placeholder {
 a {
     text-decoration: var(--font-decoration) !important;
 }
+
+.btn {
+    display: inline-block !important;
+    padding: 0.5rem 1.6rem !important;
+    background: transparent !important;
+    border-radius: 4rem !important;
+    box-shadow: var(--box-shadow) !important;
+    color: var(--cerulean) !important;
+    font-size: 0.95rem !important;
+    letter-spacing: 0.1rem !important;
+    font-weight: 600 !important;
+    transition: 0.5s ease !important;
+}
+
+.btn:hover {
+    background: var(--cerulean) !important;
+    color: var(--mirage) !important;
+}

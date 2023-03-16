@@ -1,5 +1,5 @@
-<section class="home d-flex align-items-center justify-content-center" id="home">
-    <div class="home-content d-flex align-items-center justify-content-center flex-column">
+<section class="home d-flex align-items-center" id="home">
+    <div class="home-content d-flex align-items-start justify-content-center flex-column">
         <div class="title-subtitle d-flex flex-column justify-content-center align-items-start me-auto">
             <h3>Halo, Saya</h3>
             <h1>Muhamad Luthfi</h1>
@@ -48,5 +48,8 @@
             <div class="circle"></div>
         </div>
         <div class="overlay"></div>
+    </div>
+    <div class="home-image">
+        <img src="{{ asset('assets/photos/my_img.png') }}" alt="my-img">
     </div>
 </section>

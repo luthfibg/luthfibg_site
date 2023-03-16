@@ -57,10 +57,10 @@ html {
     padding: 0 1rem;
 }
 
-.section {
+section {
     background-color: inherit;
     min-height: 100vh;
-    /* padding: 10rem 9% 2rem; */
+    padding: 10rem 7% 2rem !important;
 }
 
 input::placeholder {

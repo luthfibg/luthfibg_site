@@ -53,6 +53,10 @@ html {
     color: var(--ghost) !important;
 } */
 
+body {
+    overflow: hidden !important;
+}
+
 .container-fluid {
     padding: 0 1rem;
 }

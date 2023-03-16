@@ -50,4 +50,9 @@ nav.navbar-c a {
     font-size: 1.3rem;
     color: var(--cerulean);
     cursor: pointer;
+    transition: 2s;
+}
+
+#darkMode-icon:hover {
+    color: var(--bright-gray);
 }

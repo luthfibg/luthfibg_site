@@ -29,22 +29,20 @@
     <link rel="stylesheet" href="{{ asset('css/theme.css') }}">
     <link rel="stylesheet" href="{{ asset('css/media.css') }}">
     <link rel="stylesheet" href="{{ asset('css/preloader.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/nav_style.css') }}">
-    {{-- <link rel="stylesheet" href="{{ asset('css/headline_style.css') }}"> --}}
+    <link rel="stylesheet" href="{{ asset('css/header_style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/headline_style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/about_style.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/header.css') }}">
-
+    
     {{-- Swiper JS --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
   </head>
   <body style="background-color: var(--mirage);color: var(--ghost) !important;">
     {{-- <h1>{{ __('Hello, world!') }}</h1> --}}
-    @include('components.nav')
-    <div class="container-fluid">
-      @yield('header')
-      @yield('content')
-    </div>
+    @include('components.header')
+    @yield('headline')
+    {{-- @yield('content') --}}
+
 
     {{-- Custom JS --}}
     {{-- <script src="{{ asset('js/menu-burger.js') }}"></script> --}}

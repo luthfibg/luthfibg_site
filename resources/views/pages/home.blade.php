@@ -4,8 +4,8 @@
     @include('components.headline')
 @endsection --}}
 
-@section('header')
-    @include('components.header')
+@section('headline')
+    @include('components.headline')
 @endsection
 
 @section('content')

@@ -53,14 +53,18 @@ html {
     color: var(--ghost) !important;
 } */
 
+body {
+    overflow: hidden !important;
+}
+
 .container-fluid {
     padding: 0 1rem;
 }
 
-.section {
+section {
     background-color: inherit;
     min-height: 100vh;
-    /* padding: 10rem 9% 2rem; */
+    padding: 10rem 7% 2rem !important;
 }
 
 input::placeholder {
@@ -69,4 +73,22 @@ input::placeholder {
 
 a {
     text-decoration: var(--font-decoration) !important;
+}
+
+.btn {
+    display: inline-block !important;
+    padding: 0.5rem 1.6rem !important;
+    background: transparent !important;
+    border-radius: 4rem !important;
+    box-shadow: var(--box-shadow) !important;
+    color: var(--cerulean) !important;
+    font-size: 0.95rem !important;
+    letter-spacing: 0.1rem !important;
+    font-weight: 600 !important;
+    transition: 0.5s ease !important;
+}
+
+.btn:hover {
+    background: var(--cerulean) !important;
+    color: var(--mirage) !important;
 }

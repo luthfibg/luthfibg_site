@@ -18,6 +18,7 @@ header.header {
     font-weight: 700;
     cursor: default;
     margin-right: auto;
+    transition: 0.5s ease-in-out;
 }
 
 .logo:hover {
@@ -30,7 +31,12 @@ nav.navbar-c a {
     color: var(--cerulean);
     font-weight: 200;
     margin-right: 1.5rem;
+    transition: 0.7s;
 }
+
+/* nav.navbar-c a:hover {
+    font-family: ;
+} */
 
 /* .navbar-c a.tail {
     margin-right: 0 !important;

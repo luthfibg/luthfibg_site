@@ -13,6 +13,7 @@
 
     --astro-blue: #01435a;
     --cerulean: #00bfff;
+    --onahau: #bdeeff;
     --crimson: #de1533;
 
     /* Font Theme */
@@ -42,6 +43,10 @@
     --box-shadow: 0 0 0.8rem var(--astro-blue);
 }
 
+*:not(i) {
+    font-family: "Poppins", sans-serif !important;
+}
+
 html {
     /* font-size: 62.5%; */
     overflow-x: hidden;
@@ -65,6 +70,7 @@ section {
     background-color: inherit;
     min-height: 100vh;
     padding: 10rem 7% 2rem !important;
+    overflow: hidden !important;
 }
 
 input::placeholder {
@@ -75,9 +81,20 @@ a {
     text-decoration: var(--font-decoration) !important;
 }
 
+h2,
+h3,
+h4,
+h5 {
+    text-transform: capitalize !important;
+}
+
+p:not(a) {
+    font-size: 1rem !important;
+}
+
 .btn {
     display: inline-block !important;
-    padding: 0.5rem 1.6rem !important;
+    padding: 0.9rem 2rem !important;
     background: transparent !important;
     border-radius: 4rem !important;
     box-shadow: var(--box-shadow) !important;

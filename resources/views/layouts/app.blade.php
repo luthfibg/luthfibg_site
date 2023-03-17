@@ -41,7 +41,7 @@
     {{-- <h1>{{ __('Hello, world!') }}</h1> --}}
     @include('components.header')
     @yield('headline')
-    {{-- @yield('content') --}}
+    @yield('content')
 
 
     {{-- Custom JS --}}

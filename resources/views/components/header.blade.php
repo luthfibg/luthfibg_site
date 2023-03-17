@@ -1,8 +1,8 @@
 <header class="header">
     <a href="#" class="logo">Portfolio.</a>
     <nav class="navbar-c">
-        <a href="#headline" class="active">Utama</a>
-        <a href="#about">Tentang</a>
+        <a href="#main" class="active">Utama</a>
+        <a href="#aboutId">Tentang</a>
         <a href="#services">Layanan</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#contact" class="tail">Kontak</a>

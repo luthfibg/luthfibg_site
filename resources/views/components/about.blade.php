@@ -1,4 +1,4 @@
-<section class="about" id="about-id">
+<section class="about" id="aboutId">
     <div class="about-img">
         <img src="{{ asset('assets/photos/profile_blue.png') }}" alt="luthfi-2022">
     </div>

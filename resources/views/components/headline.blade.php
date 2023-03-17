@@ -1,4 +1,4 @@
-<section class="home d-flex align-items-center justify-content-between" id="home">
+<section class="home d-flex align-items-center justify-content-between" id="main">
     <div class="home-content d-flex align-items-start justify-content-center flex-column">
         <div class="title-subtitle d-flex flex-column justify-content-center align-items-start me-auto">
             <h3>Halo, Saya</h3>

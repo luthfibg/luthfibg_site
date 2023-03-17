@@ -24,6 +24,10 @@ span {
     text-align: center;
 }
 
+.heading span {
+    cursor: pointer;
+}
+
 .about-img {
     width: 40%;
 }

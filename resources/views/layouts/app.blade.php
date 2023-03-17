@@ -45,7 +45,7 @@
 
 
     {{-- Custom JS --}}
-    {{-- <script src="{{ asset('js/menu-burger.js') }}"></script> --}}
+    <script src="{{ asset('js/ctrl.js') }}"></script>
     <script src="{{ asset('js/input_validate.js') }}"></script>
     <script src="{{ asset('js/preloader.js') }}"></script>
     <script src="{{ asset('js/swiper-keyboard.js') }}"></script>

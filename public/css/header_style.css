@@ -10,6 +10,12 @@ header.header {
     display: flex;
     align-items: center;
     z-index: 100;
+    transition: 0.5s;
+}
+
+.header.sticky {
+    background: var(--mirage);
+    box-shadow: 0 0.1rem 1rem var(--vulcan);
 }
 
 .logo {

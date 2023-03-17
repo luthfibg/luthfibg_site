@@ -16,10 +16,22 @@ section.services .services-container {
     overflow: hidden;
 }
 
+.services-container .services-box h4 {
+    height: 3rem;
+    text-align: center;
+}
+
 .services-container .services-box p {
     position: relative;
     height: 12rem;
     overflow: hidden;
+}
+
+.services-container .services-box i {
+    color: var(--cerulean);
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
 }
 
 .services-container .services-box p:after {

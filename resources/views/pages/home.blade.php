@@ -10,4 +10,5 @@
 
 @section('content')
     @include('components.about')
+    @include('components.services')
 @endsection

@@ -109,3 +109,9 @@ p:not(a) {
     background: var(--cerulean) !important;
     color: var(--mirage) !important;
 }
+
+.card {
+    background: var(--vulcan);
+    box-shadow: var(--box-shadow);
+    color: var(--ghost);
+}

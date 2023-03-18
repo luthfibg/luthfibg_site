@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="{{ asset('css/header_style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/headline_style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/about_style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/services.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/portfolio.css') }}">
     
     {{-- Swiper JS --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
@@ -41,11 +43,11 @@
     {{-- <h1>{{ __('Hello, world!') }}</h1> --}}
     @include('components.header')
     @yield('headline')
-    {{-- @yield('content') --}}
+    @yield('content')
 
 
     {{-- Custom JS --}}
-    {{-- <script src="{{ asset('js/menu-burger.js') }}"></script> --}}
+    <script src="{{ asset('js/ctrl.js') }}"></script>
     <script src="{{ asset('js/input_validate.js') }}"></script>
     <script src="{{ asset('js/preloader.js') }}"></script>
     <script src="{{ asset('js/swiper-keyboard.js') }}"></script>

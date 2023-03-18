@@ -10,4 +10,6 @@
 
 @section('content')
     @include('components.about')
+    @include('components.services')
+    @include('layouts.portfolio')
 @endsection

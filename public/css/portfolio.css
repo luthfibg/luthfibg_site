@@ -1,0 +1,57 @@
+@import "theme.css";
+
+section.portfolio {
+    position: relative;
+}
+
+section.portfolio .heading {
+    margin-bottom: 4rem;
+}
+
+section.portfolio .card {
+    padding: 0.8rem;
+    transition: 0.6s ease;
+    border-radius: 1.2rem;
+}
+
+section.portfolio .card:hover {
+    transform: scale(1.02);
+    border-top: 0.3rem solid var(--cerulean);
+    border-bottom: 0.3rem solid var(--cerulean);
+}
+
+section.portfolio .underlayer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    opacity: 0.5;
+    border-top: 25rem solid transparent;
+    border-right: 50rem solid var(--astro-blue);
+    border-bottom: 30rem solid transparent;
+    border-left: 50rem solid var(--astro-blue);
+}
+
+section.portfolio .card .card-body .card-title {
+    height: 3rem;
+    color: var(--cerulean);
+}
+
+section.portfolio .card .card-body p {
+    height: 7rem;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+section.portfolio .card .card-body p:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4rem;
+    width: 100%;
+    background: linear-gradient(transparent, var(--vulcan));
+    background: -webkit-linear-gradient(transparent, var(--vulcan));
+}

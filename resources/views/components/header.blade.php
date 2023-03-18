@@ -1,11 +1,11 @@
 <header class="header">
     <a href="#" class="logo">Portfolio.</a>
     <nav class="navbar-c">
-        <a href="#headline" class="active">Headline</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact" class="tail">Contact</a>
+        <a href="#main" class="active">Utama</a>
+        <a href="#aboutId">Tentang</a>
+        <a href="#servicesId">Layanan</a>
+        <a href="#portfolioId">Portfolio</a>
+        <a href="#contactId" class="tail">Kontak</a>
     </nav>
     <i class="fa-solid fa-cloud-moon" id="darkMode-icon"></i>
 </header>

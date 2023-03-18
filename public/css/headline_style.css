@@ -14,17 +14,17 @@ section.home .home-content {
 }
 
 section.home .home-content h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 700;
 }
 
 section.home .home-content h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
 section.home .home-content p {
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 section.home .home-content .social-medias a {
@@ -38,7 +38,7 @@ section.home .home-content .social-medias a {
     border-radius: 50%;
     box-shadow: var(--box-shadow);
     color: var(--cerulean);
-    transition: 0.3s;
+    transition: 0.5s ease;
     margin: 2rem 0.5rem 1rem 0;
 }
 
@@ -68,7 +68,7 @@ section.home .profession-container .profession-box {
     position: absolute;
     width: 720px;
     height: 720px;
-    background: var(--astro-blue);
+    background: transparent;
     border-radius: 50%;
 }
 
@@ -82,7 +82,7 @@ section.home .profession-container .profession-box .profession {
     transform-origin: 360px;
     margin-left: 0.5rem;
     left: 2rem;
-    background: var(--astro-blue);
+    background: var(--mirage);
     padding: 13px 15px;
 }
 

@@ -1,0 +1,57 @@
+@import "theme.css";
+section.services .services-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+section.services .heading {
+    margin-bottom: 4rem;
+}
+
+.services-container .services-box {
+    flex: 1 1 15rem;
+    height: 28rem;
+    padding: 2rem 1.5rem 2rem;
+    border-radius: 0.8em;
+    overflow: hidden;
+    border-top: 0.2rem solid var(--cerulean);
+    border-bottom: 0.2rem solid var(--cerulean);
+    transition: 0.6s ease;
+}
+
+.services-container .services-box:hover {
+    transform: scale(1.02);
+}
+
+.services-container .services-box h4 {
+    height: 3rem;
+    text-align: center;
+}
+
+.services-container .services-box p {
+    position: relative;
+    height: 12rem;
+    overflow: hidden;
+}
+
+.services-container .services-box i {
+    color: var(--cerulean);
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+}
+
+.services-container .services-box p:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4rem;
+    width: 100%;
+    background: linear-gradient(transparent, var(--vulcan));
+    background: -webkit-linear-gradient(transparent, var(--vulcan));
+}

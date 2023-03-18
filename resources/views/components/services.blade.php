@@ -1,5 +1,5 @@
 <section class="services" id="servicesId">
-    <h2 class="heading mb-5">Keahlian</h2>
+    <h2 class="heading">Keahlian</h2>
     <div class="services-container mb-5">
         <div class="services-box card">
             <i class="fa-solid fa-code"></i>

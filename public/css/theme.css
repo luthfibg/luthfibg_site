@@ -115,3 +115,7 @@ p:not(a) {
     box-shadow: var(--box-shadow);
     color: var(--ghost);
 }
+
+.text-muted {
+    color: var(--raven) !important;
+}

@@ -8,6 +8,10 @@ section.services .services-container {
     gap: 1rem;
 }
 
+section.services .heading {
+    margin-bottom: 4rem;
+}
+
 .services-container .services-box {
     flex: 1 1 15rem;
     height: 28rem;

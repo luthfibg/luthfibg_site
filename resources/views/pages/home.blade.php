@@ -11,5 +11,5 @@
 @section('content')
     @include('components.about')
     @include('components.services')
-    @include('components.portfolio')
+    @include('layouts.portfolio')
 @endsection

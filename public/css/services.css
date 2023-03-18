@@ -14,6 +14,13 @@ section.services .services-container {
     padding: 2rem 1.5rem 2rem;
     border-radius: 0.8em;
     overflow: hidden;
+    border-top: 0.2rem solid var(--cerulean);
+    border-bottom: 0.2rem solid var(--cerulean);
+    transition: 0.6s ease;
+}
+
+.services-container .services-box:hover {
+    transform: scale(1.02);
 }
 
 .services-container .services-box h4 {

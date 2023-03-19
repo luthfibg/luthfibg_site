@@ -12,4 +12,5 @@
     @include('components.about')
     @include('components.services')
     @include('layouts.portfolio_plain')
+    @include('components.testimonials')
 @endsection

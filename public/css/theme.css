@@ -45,6 +45,9 @@
 
 *:not(i) {
     font-family: "Poppins", sans-serif !important;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard */
 }
 
 html {
@@ -86,10 +89,12 @@ h3,
 h4,
 h5 {
     text-transform: capitalize !important;
+    cursor: pointer;
 }
 
 p:not(a) {
     font-size: 1rem !important;
+    cursor: pointer;
 }
 
 .btn {

@@ -34,6 +34,8 @@
     <link rel="stylesheet" href="{{ asset('css/about_style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/services.css') }}">
     <link rel="stylesheet" href="{{ asset('css/portfolio.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/testimonials.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/?.css') }}">
     
     {{-- Swiper JS --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />

@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="{{ asset('css/theme.css') }}">
     <link rel="stylesheet" href="{{ asset('css/media.css') }}">
     <link rel="stylesheet" href="{{ asset('css/preloader.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/swiper_keyboard.css') }}">
     <link rel="stylesheet" href="{{ asset('css/header_style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/headline_style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/about_style.css') }}">

@@ -58,4 +58,3 @@
         </div>
     </div>
 </section>
-<script src="{{ asset('js/swiper-keyboard.js') }}"></script>

@@ -104,7 +104,7 @@ section.portfolio-plain .portfolio-container .portfolio-box .portfolio-layer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(transparent, var(--astro-blue));
+    background: linear-gradient(var(--vulcan-fade), var(--astro-blue));
     color: var(--cerulean);
     display: flex;
     align-items: center;

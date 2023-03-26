@@ -5,21 +5,45 @@
     padding: 5rem;
 }
 
+.testimonial-content {
+    margin-bottom: 3rem;
+}
+
 .testimonial-content .testimonial-slide {
     display: flex;
+    /* position: relative; */
     align-items: center;
     flex-direction: column;
     background: var(--vulcan);
     padding: 3rem 5rem;
     border-radius: 2rem;
+    height: 28rem;
     box-shadow: var(--box-shadow);
-    border-top: 0.8rem solid var(--cerulean);
-    border-bottom: 0.8rem solid var(--cerulean);
+    border-top: 0.4rem solid var(--cerulean);
+    border-bottom: 0.4rem solid var(--cerulean);
+    overflow: hidden;
+}
+
+.testimonial-content .testimonial-slide p {
+    position: relative;
+    height: 26rem;
+    overflow: hidden;
+}
+
+.testimonial-content .testimonial-slide p:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4rem;
+    width: 100%;
+    background: linear-gradient(transparent, var(--vulcan));
+    background: -webkit-linear-gradient(transparent, var(--vulcan));
 }
 
 .testimonial-slide img {
-    width: 10rem;
-    height: 10rem;
+    width: 9rem;
+    height: 9rem;
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 2rem;

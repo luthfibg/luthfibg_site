@@ -11,8 +11,8 @@
             <label for="floatingEmail">Alamat Email</label>
         </div>
         <div class="form-floating mb-5">
-            <textarea rows="10" cols="30" class="form-control" name="message" id="floatingPhone" placeholder="Ketikkan pesan"></textarea>
-            <label for="floatingPhone">Ketikkan Pesan</label>
+            <textarea cols="30" rows="10" class="form-control" name="message" id="floatingMessage" placeholder="Ketikkan pesan"></textarea>
+            <label for="floatingMessage">Ketikkan Pesan</label>
         </div>
         <div class="form-floating d-flex justify-content-center">
             <input type="submit" class="form-control btn" name="submit_message" id="submitMessage" value="Kirim">

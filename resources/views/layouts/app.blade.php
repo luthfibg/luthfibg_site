@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="{{ asset('css/portfolio.css') }}">
     <link rel="stylesheet" href="{{ asset('css/testimonials.css') }}">
     <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/?.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
     
     {{-- Swiper JS --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
@@ -49,7 +49,7 @@
     @include('components.header')
     @yield('headline')
     @yield('content')
-
+    @include('components.footer')
 
     {{-- JS Link Referrer --}}
     <script src="https://kit.fontawesome.com/ede41cc34b.js" crossorigin="anonymous"></script>

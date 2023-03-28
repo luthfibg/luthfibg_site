@@ -1,3 +1,8 @@
+section.contact {
+    background-color: var(--vulcan) !important;
+    padding-bottom: 5rem !important;
+}
+
 section.contact .heading {
     margin-bottom: 4rem;
 }
@@ -14,4 +19,5 @@ section.contact form {
 
 section.contact form textarea {
     resize: none;
+    height: 10rem !important;
 }

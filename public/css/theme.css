@@ -131,6 +131,7 @@ textarea {
     background-color: var(--bright-gray) !important;
     border: none !important;
     color: var(--ghost) !important;
+    outline: none !important;
 }
 
 input::placeholder {

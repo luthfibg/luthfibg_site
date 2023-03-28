@@ -1,0 +1,34 @@
+footer {
+    background-color: var(--mirage) !important;
+    box-shadow: 0 0.1rem 1rem var(--astro-blue) !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 7%;
+}
+
+.footer-text p {
+    font-size: 1.65rem;
+    color: var(--iron);
+}
+
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    background: transparent;
+    border-radius: 0.5rem;
+    border: 0.08rem solid var(--cerulean);
+    outline: 0.2rem solid transparent;
+    transition: 0.5s ease;
+}
+
+.footer-iconTop a:hover {
+    outline-color: var(--astro-blue);
+}
+
+.footer-iconTop a i {
+    color: var(--cerulean);
+}

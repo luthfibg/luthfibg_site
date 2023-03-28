@@ -10,9 +10,12 @@
             <input type="email" class="form-control" name="email" id="floatingEmail" placeholder="Alamat Email">
             <label for="floatingEmail">Alamat Email</label>
         </div>
-        <div class="form-floating">
-            <input type="tel" class="form-control" name="phone" id="floatingPhone" placeholder="Telepon">
-            <label for="floatingPhone">Telepon</label>
+        <div class="form-floating mb-5">
+            <textarea rows="10" cols="30" class="form-control" name="message" id="floatingPhone" placeholder="Ketikkan pesan"></textarea>
+            <label for="floatingPhone">Ketikkan Pesan</label>
+        </div>
+        <div class="form-floating d-flex justify-content-center">
+            <input type="submit" class="form-control btn" name="submit_message" id="submitMessage" value="Kirim">
         </div>
     </form>
 </section>

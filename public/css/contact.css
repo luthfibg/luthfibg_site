@@ -1,0 +1,13 @@
+section.contact .heading {
+    margin-bottom: 4rem;
+}
+
+section.contact form {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* section.contact form input {
+
+} */

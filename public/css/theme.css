@@ -126,6 +126,13 @@ p:not(a) {
     color: var(--raven) !important;
 }
 
+input,
+textarea {
+    background-color: var(--bright-gray) !important;
+    border: none !important;
+    color: var(--ghost) !important;
+}
+
 input::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: transparent;

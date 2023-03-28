@@ -18,6 +18,11 @@ header.header {
     box-shadow: 0 0.1rem 1rem var(--vulcan);
 }
 
+#menu-icon {
+    color: var(--cerulean);
+    display: none;
+}
+
 .logo {
     font-size: 2rem;
     color: var(--raven);

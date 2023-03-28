@@ -69,7 +69,7 @@
                             <form action="{{ route('guests.store', ['guest' => 'Jonathan']) }}" method="POST" class="d-flex flex-wrap flex-column text-center mb-3 needs-validation" id="navbarNav" novalidate>
                                 @csrf
                                 <div class="form-floating mb-3 input-name">
-                                    <input type="text" name="guest_name" class="form-control is-invalid is-guest" id="floatingInput" style="background-color: var(--bright-gray); color:var(--ghost);" autocomplete="off">
+                                    <input type="text" name="guest_name" class="form-control is-invalid is-guest" id="floatingInput" style="background-color: var(--bright-gray); color:var(--ghost);" placeholder="Guest Name" autocomplete="off">
                                     <label for="floatingInput" style="color: var(--gray-chateau);">{{ __('Guest Name') }}</label>
                                     <div class="invalid-feedback">
                                         {{ __('Please provide your name') }}

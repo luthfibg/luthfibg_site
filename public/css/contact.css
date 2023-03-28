@@ -1,0 +1,23 @@
+section.contact {
+    background-color: var(--vulcan) !important;
+    padding-bottom: 5rem !important;
+}
+
+section.contact .heading {
+    margin-bottom: 4rem;
+}
+
+section.contact form {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* section.contact form input {
+
+} */
+
+section.contact form textarea {
+    resize: none;
+    height: 10rem !important;
+}

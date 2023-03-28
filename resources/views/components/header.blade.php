@@ -4,8 +4,10 @@
         <a href="#main" class="active">Utama</a>
         <a href="#aboutId">Tentang</a>
         <a href="#servicesId">Layanan</a>
-        <a href="#portfolioId">Portfolio</a>
+        <a href="#portfolioPlainId">Portfolio</a>
         <a href="#contactId" class="tail">Kontak</a>
     </nav>
     <i class="fa-solid fa-cloud-moon" id="darkMode-icon"></i>
+
+    <i class="fa-solid fa-bars fa-lg ms-2" id="menu-icon"></i>
 </header>

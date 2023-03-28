@@ -10,6 +10,7 @@
     --bright-gray: #3c4452;
     --mirage: #1a202c;
     --vulcan: #10151e;
+    --vulcan-fade: rgba(16, 21, 30, 0.8);
 
     --astro-blue: #01435a;
     --cerulean: #00bfff;
@@ -45,6 +46,9 @@
 
 *:not(i) {
     font-family: "Poppins", sans-serif !important;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard */
 }
 
 html {
@@ -73,9 +77,9 @@ section {
     overflow: hidden !important;
 }
 
-input::placeholder {
+/* input::placeholder {
     color: var(--ghost) !important;
-}
+} */
 
 a {
     text-decoration: var(--font-decoration) !important;
@@ -86,10 +90,12 @@ h3,
 h4,
 h5 {
     text-transform: capitalize !important;
+    cursor: pointer;
 }
 
 p:not(a) {
     font-size: 1rem !important;
+    cursor: pointer;
 }
 
 .btn {
@@ -118,4 +124,48 @@ p:not(a) {
 
 .text-muted {
     color: var(--raven) !important;
+}
+
+input,
+textarea {
+    background-color: var(--bright-gray) !important;
+    border: none !important;
+    color: var(--ghost) !important;
+    outline: none !important;
+}
+
+input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: transparent;
+    opacity: 0; /* Firefox */
+}
+
+input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: transparent;
+}
+
+input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: transparent;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    /* border: 1px solid green; */
+    -webkit-text-fill-color: var(--ghost) !important;
+    -webkit-box-shadow: 0 0 0px 1000px var(--bright-gray) inset !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+input[type="submit"] {
+    width: 12rem;
+    text-align: center;
 }

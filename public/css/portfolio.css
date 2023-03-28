@@ -1,6 +1,7 @@
 @import "theme.css";
 
-section.portfolio {
+section.portfolio,
+section.portfolio-plain {
     position: relative;
 }
 
@@ -20,7 +21,8 @@ section.portfolio .card:hover {
     border-bottom: 0.3rem solid var(--cerulean);
 }
 
-section.portfolio .underlayer {
+section.portfolio .underlayer,
+section.portfolio-plain .underlayer {
     position: absolute;
     top: 0;
     right: 0;
@@ -54,4 +56,88 @@ section.portfolio .card .card-body p:after {
     width: 100%;
     background: linear-gradient(transparent, var(--vulcan));
     background: -webkit-linear-gradient(transparent, var(--vulcan));
+}
+
+/* Portfolio Plain Version */
+
+section.portfolio-plain {
+    padding-bottom: 10rem;
+}
+
+section.portfolio-plain h2 {
+    margin-bottom: 4rem;
+}
+
+section.portfolio-plain .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+section.portfolio-plain .portfolio-container .portfolio-box {
+    position: relative;
+    display: flex;
+    background: var(--vulcan);
+    border-radius: 0.8rem;
+    box-shadow: 0 0 1rem var(--astro-blue);
+    overflow: hidden;
+}
+
+section.portfolio-plain .portfolio-container .portfolio-box:hover {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+}
+
+section.portfolio-plain .portfolio-container .portfolio-box img {
+    width: 100%;
+    transition: 0.5s ease;
+}
+
+section.portfolio-plain .portfolio-container .portfolio-box:hover img {
+    transform: scale(1.06);
+}
+
+section.portfolio-plain .portfolio-container .portfolio-box .portfolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(var(--vulcan-fade), var(--astro-blue));
+    color: var(--cerulean);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+section.portfolio-plain
+    .portfolio-container
+    .portfolio-box:hover
+    .portfolio-layer {
+    opacity: 1;
+}
+
+section.portfolio-plain
+    .portfolio-container
+    .portfolio-box
+    .portfolio-layer
+    h4 {
+    font-weight: 600;
+}
+
+section.portfolio-plain .portfolio-container .portfolio-box .portfolio-layer a {
+    display: inline-flex;
+    color: var(--bright-gray);
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: var(--cerulean);
+    border-radius: 50%;
 }

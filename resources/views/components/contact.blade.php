@@ -3,16 +3,16 @@
 
     <form action="#" method="POST">
         <div class="form-floating mb-3">
-            <input type="text" class="form-control" name="name" id="floatingInput">
-            <label for="floatingInput">Nama Lengkap</label>
+            <input type="text" class="form-control" name="name" id="floatingName" placeholder="Nama">
+            <label for="floatingName">Nama Lengkap</label>
         </div>
         <div class="form-floating mb-3">
-            <input type="email" class="form-control" name="email" id="floatingInput">
-            <label for="floatingInput">Alamat Email</label>
+            <input type="email" class="form-control" name="email" id="floatingEmail" placeholder="Alamat Email">
+            <label for="floatingEmail">Alamat Email</label>
         </div>
         <div class="form-floating">
-            <input type="tel" class="form-control" name="phone" id="floatingPassword" >
-            <label for="floatingPassword">Telepon</label>
+            <input type="tel" class="form-control" name="phone" id="floatingPhone" placeholder="Telepon">
+            <label for="floatingPhone">Telepon</label>
         </div>
     </form>
 </section>

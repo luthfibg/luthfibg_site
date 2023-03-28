@@ -125,3 +125,19 @@ p:not(a) {
 .text-muted {
     color: var(--raven) !important;
 }
+
+input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: transparent !important;
+    opacity: 1; /* Firefox */
+}
+
+input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: transparent !important;
+}
+
+input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: transparent !important;
+}

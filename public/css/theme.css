@@ -77,9 +77,9 @@ section {
     overflow: hidden !important;
 }
 
-input::placeholder {
+/* input::placeholder {
     color: var(--ghost) !important;
-}
+} */
 
 a {
     text-decoration: var(--font-decoration) !important;
@@ -128,16 +128,16 @@ p:not(a) {
 
 input::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: transparent !important;
-    opacity: 1; /* Firefox */
+    color: transparent;
+    opacity: 0; /* Firefox */
 }
 
 input:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
-    color: transparent !important;
+    color: transparent;
 }
 
 input::-ms-input-placeholder {
     /* Microsoft Edge */
-    color: transparent !important;
+    color: transparent;
 }

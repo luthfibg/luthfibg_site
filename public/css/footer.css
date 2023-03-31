@@ -9,7 +9,7 @@ footer {
 }
 
 .footer-text p {
-    font-size: 1.65rem;
+    font-size: 0.85rem !important;
     color: var(--iron);
 }
 

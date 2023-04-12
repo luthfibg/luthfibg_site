@@ -28,7 +28,7 @@
     {{-- Custom CSS --}}
     <link rel="stylesheet" href="{{ asset('css/theme.css') }}">
     <link rel="stylesheet" href="{{ asset('css/breakpoints.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/preloader.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('css/preloader.css') }}"> --}}
     <link rel="stylesheet" href="{{ asset('css/swiper_keyboard.css') }}">
     <link rel="stylesheet" href="{{ asset('css/header_style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/headline_style.css') }}">
@@ -61,9 +61,9 @@
     {{-- Custom JS --}}
     <script src="{{ asset('js/ctrl.js') }}"></script>
     <script src="{{ asset('js/input_validate.js') }}"></script>
-    <script src="{{ asset('js/preloader.js') }}"></script>
+    {{-- <script src="{{ asset('js/preloader.js') }}"></script> --}}
     <script src="{{ asset('js/swiper-keyboard.js') }}"></script>
-    <script src="{{ asset('js/parallax.js') }}"></script>
+    {{-- <script src="{{ asset('js/parallax.js') }}"></script> --}}
 
   </body>
 </html>

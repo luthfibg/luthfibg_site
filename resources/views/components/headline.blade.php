@@ -5,7 +5,7 @@
             <h1>Muhamad Luthfi</h1>
         </div>
         <p class="short-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, neque. Praesentium possimus, sit ea nulla velit laborum molestiae quod, alias, sapiente quasi omnis aliquam magni? Suscipit tenetur aliquid voluptates deleniti nemo labore!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, neque.
         </p>
         <div class="social-medias">
             <a href="">
@@ -50,6 +50,6 @@
         <div class="overlay"></div>
     </div>
     <div class="home-image">
-        <img src="{{ asset('assets/photos/my_img.png') }}" alt="my-img">
+        <img src="{{ asset('assets/photos/my_img_cr.png') }}" alt="my-img">
     </div>
 </section>

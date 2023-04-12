@@ -1,4 +1,4 @@
-@import "theme.css";
+/* @import "theme.css";
 
 /************************************/
 /************************************/
@@ -26,21 +26,55 @@
         padding: 0 1rem;
     }
 
-    .container-fluid section.home .home-content {
-        max-width: 45% !important;
-        align-items: start !important;
+    section.home .home-content {
+        width: 65% !important;
     }
-    /* .home .profession-container {
-        right: -9rem !important;
-        height: 90rem !important;
+    section.home .home-content h3 {
+        font-size: 1.6rem !important;
     }
-    .home .profession-container .profession-box {
-        right: -12rem !important;
-        height: 90rem !important;
-    } */
-    /* .home .profession-container .overlay {
-        right: -12rem !important;
-    } */
+    section.home .home-content h1 {
+        font-size: 2rem !important;
+    }
+    section.home .profession-container .profession-box {
+        width: 400px !important;
+    }
+    section.home .profession-container .overlay {
+        top: 25% !important;
+        border-top: 360px solid var(--vulcan) !important;
+        border-right: 200px solid var(--vulcan) !important;
+        border-bottom: 360px solid var(--vulcan) !important;
+        border-left: 200px solid transparent !important;
+    }
+    section.home .profession-container {
+        width: 400px !important;
+        transform: translateY(-50%) !important;
+    }
+    section.home .profession-container .profession-box .circle {
+        width: 360px !important;
+        height: 360px !important;
+        margin-left: 3rem !important;
+    }
+    section.home .profession-container .profession-box .profession {
+        transform: rotate(calc(360deg / 4 * var(--i)));
+        transform-origin: 360px;
+        margin-left: 0.5rem;
+        left: -1rem !important;
+        padding: 13px 15px;
+    }
+    section.home .profession-container .profession-box .profession i {
+        font-size: 1rem !important;
+    }
+    section.home .profession-container .profession-box .profession h3 {
+        font-size: 0.95rem !important;
+        line-height: 1;
+        margin-bottom: 0;
+    }
+    section.home img {
+        width: 40%;
+    }
+    section.services .services-container {
+        gap: 3rem !important;
+    }
 }
 
 /* Laptop S */
@@ -95,6 +129,10 @@
     section.home .home-content .social-medias a i {
         font-size: 1.45rem !important;
     }
+    section.home img {
+        width: 35%;
+        right: 0 !important;
+    }
 }
 
 /* Laptop */
@@ -136,6 +174,10 @@
         border-bottom: 680px solid var(--vulcan) !important;
         border-left: 420px solid transparent !important;
     } */
+    section.home img {
+        right: 0 !important;
+        width: 30% !important;
+    }
 }
 
 /* Laptop L */

@@ -4,7 +4,7 @@ header.header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     padding: 1rem 7%;
     background: transparent;
     display: flex;
@@ -44,14 +44,6 @@ nav.navbar-c a {
     margin-right: 1.5rem;
     transition: 0.7s;
 }
-
-/* nav.navbar-c a:hover {
-    font-family: ;
-} */
-
-/* .navbar-c a.tail {
-    margin-right: 0 !important;
-} */
 
 .navbar-c a.active::before {
     content: "";

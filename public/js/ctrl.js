@@ -1,3 +1,5 @@
+// ============================= sticky navbar ===========================
+
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header nav a");
 
@@ -21,4 +23,14 @@ window.onscroll = () => {
     let header = document.querySelector(".header");
 
     header.classList.toggle("sticky", window.scrollY > 100);
+};
+
+// ======================= menu navbar icon fold ============================
+
+let menuIcon = document.querySelector("#menu-icon");
+let navbar = document.querySelector(".navbar-c");
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle("fa-xmark");
+    navbar.classList.toggle("active");
 };

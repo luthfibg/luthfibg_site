@@ -9,5 +9,5 @@
     </nav>
     <i class="fa-solid fa-cloud-moon" id="darkMode-icon"></i>
 
-    <i class="fa-solid fa-bars fa-lg ms-2" id="menu-icon"></i>
+    <i class="fa-solid fa-ellipsis-vertical fa-lg ms-2" id="menu-icon"></i>
 </header>

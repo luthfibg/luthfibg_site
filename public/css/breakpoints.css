@@ -313,6 +313,7 @@
     section.home {
         padding: 0 3% 23rem;
         justify-content: center !important;
+        align-items: start !important;
         text-align: center;
     }
     section.home .home-content {
@@ -326,17 +327,29 @@
         font-size: 1.65rem !important;
         font-weight: 700;
     }
+    p,
     section.home .home-content p {
-        font-size: 1rem !important;
+        font-size: 0.9rem !important;
     }
     section.home .home-content .title-subtitle {
         align-items: center !important;
     }
     .home-content .social-medias a {
-        margin: 2.5rem 0.75rem 3rem;
+        margin: 1.8rem 0.3rem 0.9rem 0 !important;
+        width: 2.2rem !important;
+        height: 2.2rem !important;
+    }
+    .home-content .social-medias a i {
+        font-size: 0.95rem !important;
+    }
+    .btn,
+    a.btn,
+    .home-content a.btn {
+        font-size: 0.9rem !important;
+        padding: 0.7rem 1.6rem !important;
     }
     section.home .profession-container {
-        width: 225px !important;
+        width: 100% !important;
         height: 720px !important;
     }
     section.home .profession-container .profession-box {
@@ -369,8 +382,13 @@
         line-height: 0.9;
         margin-bottom: 0;
     }
-    .container {
-        margin: initial;
+    section.home .profession-container .overlay {
+        position: fixed;
+        top: 70rem;
+        left: 50%;
+        right: 0;
+        transform: rotate(90deg) translate(-50%, 50%) scaleY(1);
+        border-width: 23.9rem;
     }
 }
 

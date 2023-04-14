@@ -1,3 +1,13 @@
+// ======================= menu navbar icon fold ============================
+
+let menuIcon = document.querySelector("#menu-icon");
+let navbar = document.querySelector(".navbar-c");
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle("fa-xmark");
+    navbar.classList.toggle("active");
+};
+
 // ============================= sticky navbar ===========================
 
 let sections = document.querySelectorAll("section");
@@ -23,14 +33,8 @@ window.onscroll = () => {
     let header = document.querySelector(".header");
 
     header.classList.toggle("sticky", window.scrollY > 100);
-};
 
-// ======================= menu navbar icon fold ============================
-
-let menuIcon = document.querySelector("#menu-icon");
-let navbar = document.querySelector(".navbar-c");
-
-menuIcon.onclick = () => {
-    menuIcon.classList.toggle("fa-xmark");
-    navbar.classList.toggle("active");
+    // ======================= remove icon navbar when scroll ============================
+    menuIcon.classList.remove("fa-xmark");
+    navbar.classList.remove("active");
 };

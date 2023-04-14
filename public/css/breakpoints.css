@@ -308,6 +308,62 @@
     section.home img {
         display: none;
     }
+    section.home .home-content {
+        max-width: 100% !important;
+    }
+    section.home .home-content h3 {
+        font-size: 1.3rem !important;
+        font-weight: 700;
+    }
+    section.home .home-content h1 {
+        font-size: 1.65rem !important;
+        font-weight: 700;
+    }
+    section.home .home-content p {
+        font-size: 1rem !important;
+    }
+    section.home {
+        padding: 0 3% 23rem;
+        justify-content: center;
+        text-align: center;
+    }
+    .home-content .social-medias a {
+        margin: 2.5rem 0.75rem 3rem;
+    }
+    section.home .profession-container {
+        width: 225px !important;
+        height: 720px !important;
+    }
+    section.home .profession-container .profession-box {
+        width: 100% !important;
+        height: 100% !important;
+    }
+    section.home .profession-container .overlay {
+        top: 0 !important;
+        border-top: 360px solid var(--vulcan) !important;
+        border-right: 112.5px solid var(--vulcan) !important;
+        border-bottom: 360px solid var(--vulcan) !important;
+        border-left: 112.5px solid transparent !important;
+    }
+    section.home .profession-container .profession-box .circle {
+        width: 200px !important;
+        height: 200px !important;
+        margin-left: 3rem !important;
+    }
+    section.home .profession-container .profession-box .profession {
+        transform: rotate(calc(360deg / 4 * var(--i)));
+        transform-origin: 360px;
+        margin-left: 0.5rem;
+        left: 0rem !important;
+    }
+    section.home .profession-container .profession-box .profession i {
+        font-size: 1.1rem !important;
+    }
+    section.home .profession-container .profession-box .profession h3 {
+        font-size: 0.9rem !important;
+        line-height: 0.9;
+        margin-bottom: 0;
+    }
     .container {
         margin: initial;
     }

@@ -356,13 +356,6 @@
         width: 100% !important;
         height: 100% !important;
     }
-    section.home .profession-container .overlay {
-        top: 0 !important;
-        border-top: 360px solid var(--vulcan) !important;
-        border-right: 112.5px solid var(--vulcan) !important;
-        border-bottom: 360px solid var(--vulcan) !important;
-        border-left: 112.5px solid transparent !important;
-    }
     section.home .profession-container .profession-box .circle {
         width: 200px !important;
         height: 200px !important;
@@ -385,10 +378,14 @@
     section.home .profession-container .overlay {
         position: fixed;
         top: 70rem;
-        left: 50%;
+        left: 30%;
         right: 0;
-        transform: rotate(90deg) translate(-50%, 50%) scaleY(1);
+        transform: rotate(90deg) translate(180%, 0) scaleY(1);
         border-width: 23.9rem;
+        border-top: 50vh solid var(--vulcan) !important;
+        border-right: 20vw solid var(--vulcan) !important;
+        border-bottom: 50vh solid var(--vulcan) !important;
+        border-left: 20vw solid transparent !important;
     }
 }
 

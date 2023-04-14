@@ -51,7 +51,7 @@
             <div class="tooltip-arrow" data-popper-arrow></div>
         </div>
     </div>
-    {{-- <div class="profession-container">
+    <div class="profession-container">
         <div class="profession-box d-flex justify-content-center align-items-center p-1">
             <div class="profession" style="--i:0;">
                 <i class="fa-solid fa-code"></i>
@@ -73,7 +73,7 @@
             <div class="circle"></div>
         </div>
         <div class="overlay"></div>
-    </div> --}}
+    </div>
     <div class="home-image">
         <img src="{{ asset('assets/photos/my_img_cr.png') }}" alt="my-img">
     </div>

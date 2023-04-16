@@ -72,7 +72,7 @@
 
             <div class="circle"></div>
         </div>
-        <div class="overlay"></div>
+        {{-- <div class="overlay"></div> --}}
     </div>
     <div class="home-image">
         <img src="{{ asset('assets/photos/my_img_cr.png') }}" alt="my-img">

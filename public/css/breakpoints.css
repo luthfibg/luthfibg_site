@@ -8,6 +8,13 @@
 /************************************/
 /************************************/
 
+/* @media (min-width: 375px) {
+    section.home .profession-container .overlay {
+        left: 20%;
+        transform: rotate(90deg) translate(140%, 0) scaleY(1);
+    }
+} */
+
 /* Tablet S */
 @media (min-width: 576px) {
     .container {
@@ -103,6 +110,10 @@
     /* .container-fluid section.home .home-content {
         max-width: 38rem !important;
     } */
+
+    section.home {
+        align-items: center !important;
+    }
 
     .container-fluid section.home .home-content h3 {
         font-size: 1.6rem !important;
@@ -262,14 +273,53 @@
 /************************************/
 /************************************/
 
-/* Mobile S - L */
-@media (max-width: 576px) {
-    .container {
-        margin: initial;
+/* Mobile S, M, L (Portrait) */
+@media (max-width: 319.98px) and (orientation: portrait) {
+    section.home .profession-container .overlay {
+        left: 20%;
+        transform: rotate(90deg) translate(190%, 0) scaleY(1) !important;
     }
 }
 
-/* Tablet */
+@media (min-width: 320px) and (max-width: 374.98px) and (orientation: portrait) {
+    section.home .profession-container .overlay {
+        left: 20%;
+        transform: rotate(90deg) translate(170%, 0) scaleY(1) !important;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 424.98px) and (orientation: portrait) {
+    section.home .profession-container .overlay {
+        left: 20%;
+        transform: rotate(90deg) translate(150%, 0) scaleY(1) !important;
+    }
+}
+
+/* Tablet (Portrait) */
+@media (min-width: 425px) and (max-width: 529.98px) and (orientation: portrait) {
+    section.home .profession-container .overlay {
+        left: 20%;
+        transform: rotate(90deg) translate(120%, 0) scaleY(1) !important;
+    }
+}
+
+/* Tablet (Landscape) */
+@media (min-width: 530px) and (max-width: 767.98px) and (orientation: landscape) {
+    section.home .profession-container .overlay {
+        left: 20%;
+        transform: rotate(90deg) translate(95%, 0) scaleY(2) !important;
+    }
+    section.home .home-content p {
+        padding: 0 1.2rem;
+    }
+    section.home img {
+        content: url(../assets/photos/my_img_cr2.png);
+        display: block !important;
+        width: 32% !important;
+    }
+}
+
+/* Global Setup For Mobile & Tablet Screens */
 @media (max-width: 767.98px) {
     #menu-icon {
         display: block !important;
@@ -334,6 +384,9 @@
     section.home .home-content .title-subtitle {
         align-items: center !important;
     }
+    .home-content .social-medias {
+        display: none;
+    }
     .home-content .social-medias a {
         margin: 1.8rem 0.3rem 0.9rem 0 !important;
         width: 2.2rem !important;
@@ -378,14 +431,14 @@
     section.home .profession-container .overlay {
         position: fixed;
         top: 70rem;
-        left: 30%;
+        left: 20%;
         right: 0;
-        transform: rotate(90deg) translate(180%, 0) scaleY(1);
+        transform: rotate(90deg) translate(170%, 0) scaleY(1);
         border-width: 23.9rem;
         border-top: 50vh solid var(--vulcan) !important;
-        border-right: 20vw solid var(--vulcan) !important;
+        border-right: 30vw solid var(--vulcan) !important;
         border-bottom: 50vh solid var(--vulcan) !important;
-        border-left: 20vw solid transparent !important;
+        border-left: 30vw solid transparent !important;
     }
 }
 

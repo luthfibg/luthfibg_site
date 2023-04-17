@@ -63,7 +63,7 @@
             </div>
             <div class="profession" style="--i:2;">
                 <i class="fa-solid fa-microchip"></i>
-                <h3>IoT Engineer</h3>
+                <h3>IoT&nbsp;Engineer</h3>
             </div>
             <div class="profession" style="--i:3;">
                 <i class="fa-regular fa-image"></i>
@@ -72,7 +72,7 @@
 
             <div class="circle"></div>
         </div>
-        {{-- <div class="overlay"></div> --}}
+        <div class="overlay"></div>
     </div>
     <div class="home-image">
         <img src="{{ asset('assets/photos/my_img_cr.png') }}" alt="my-img">

@@ -44,6 +44,19 @@
     --box-shadow: 0 0 0.8rem var(--astro-blue);
 }
 
+.light-mode {
+    --light: #eeeeff;
+    --iron: #ced1d6;
+    --ghost-bg: #71797e;
+    --gray-chateau: #767d89;
+    --raven: #767d89;
+    --ghost: #3c4452;
+    --mirage: #fff;
+    --vulcan: #edeade;
+    --vulcan-fade: rgba(16, 21, 30, 0.8);
+    --astro-blue: #01435a;
+}
+
 *:not(i) {
     font-family: "Poppins", sans-serif !important;
     -webkit-user-select: none; /* Safari */

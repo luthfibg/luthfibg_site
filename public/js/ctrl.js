@@ -1,3 +1,14 @@
+// window.onload = function () {
+//     var span = document.createElement("span");
+
+//     span.className = "fas";
+//     span.style.display = "none";
+//     document.body.insertBefore(span, document.body.firstChild);
+
+//     alert(window.getComputedStyle(span, null).getPropertyValue("font-family"));
+
+//     document.body.removeChild(span);
+// };
 // ======================= menu navbar icon fold ============================
 
 let menuIcon = document.querySelector("#menu-icon");
@@ -37,4 +48,13 @@ window.onscroll = () => {
     // ======================= remove icon navbar when scroll ============================
     menuIcon.classList.remove("fa-xmark");
     navbar.classList.remove("active");
+};
+
+// ======================= remove icon navbar when scroll ============================
+
+let darkModeIcon = document.querySelector("#darkMode-icon");
+
+darkModeIcon.onclick = () => {
+    darkModeIcon.classList.toggle("fa-moon");
+    document.body.classList.toggle("light-mode");
 };

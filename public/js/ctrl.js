@@ -58,3 +58,24 @@ darkModeIcon.onclick = () => {
     darkModeIcon.classList.toggle("fa-moon");
     document.body.classList.toggle("light-mode");
 };
+
+// ======================= scroll reveal ============================
+ScrollReveal({
+    reset: true,
+    distance: "60px",
+    duration: 2500,
+    delay: 200,
+});
+
+ScrollReveal().reveal(
+    ".home-content, .heading, .title-subtitle, .short-desc, .about-h3, .about-p",
+    {
+        origin: "top",
+    }
+);
+ScrollReveal().reveal(
+    ".home-img, img, .service-container, .portfolio-box, .testimonial-wrapper, .contact form, .card",
+    {
+        origin: "bottom",
+    }
+);

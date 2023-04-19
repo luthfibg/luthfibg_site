@@ -55,6 +55,7 @@
     @include('components.footer')
 
     {{-- JS Link Referrer --}}
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>

@@ -675,6 +675,9 @@
         position: absolute;
         right: 4rem;
     }
+    .heading {
+        font-size: 2rem !important;
+    }
     .navbar-c {
         position: absolute !important;
         top: 100% !important;
@@ -850,6 +853,25 @@
     }
     section.about .about-content p {
         text-align: justify;
+    }
+    section.services .services-container .services-box {
+        max-width: 16rem !important;
+    }
+    section.portfolio-plain .portfolio-container {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+    section.portfolio .card {
+        width: 18rem !important;
+    }
+    section.testimonial-container .testimonial-wrapper {
+        padding: 0 !important;
+    }
+    section.testimonial-container .testimonial-box {
+        margin: 0 !important;
+        width: 100vw !important;
+    }
+    section.testimonial-container .testimonial-slide {
+        width: 18rem !important;
     }
 }
 

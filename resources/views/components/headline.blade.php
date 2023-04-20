@@ -75,6 +75,6 @@
         <div class="overlay"></div>
     </div>
     <div class="home-image">
-        <img src="{{ asset('assets/photos/my_img_cr.png') }}" alt="my-img">
+        <img src="{{ asset('assets/photos/my_img_cr.png') }}" class="avatar" alt="my-img">
     </div>
 </section>

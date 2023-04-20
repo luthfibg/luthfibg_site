@@ -64,7 +64,7 @@
         margin-left: 3rem !important;
     }
     section.home .profession-container .profession-box .profession {
-        transform-origin: 360px;
+        transform-origin: 320px !important;
         margin-left: 0.5rem;
         left: -1rem !important;
     }
@@ -81,6 +81,37 @@
     }
     section.services .services-container {
         gap: 3rem !important;
+    }
+    section.home
+        .profession-container
+        .profession-box
+        .profession:nth-child(1) {
+        transform: rotate(0deg) translate(-5px, -10px) !important; /* -120px -210px  + (->)  - (^)*/
+    }
+    section.home
+        .profession-container
+        .profession-box
+        .profession:nth-child(1)
+        i {
+        margin-right: 0 !important;
+    }
+    section.home
+        .profession-container
+        .profession-box
+        .profession:nth-child(2) {
+        transform: rotate(-90deg) translate(65px, -85px) !important;
+    }
+    section.home
+        .profession-container
+        .profession-box
+        .profession:nth-child(3) {
+        transform: rotate(180deg) translate(220px, 0px) !important;
+    }
+    section.home
+        .profession-container
+        .profession-box
+        .profession:nth-child(4) {
+        transform: rotate(90deg) translate(75px, 85px) !important;
     }
 }
 
@@ -161,7 +192,7 @@
     }
     section.home .profession-container .profession-box .profession {
         transform: rotate(calc(360deg / 4 * var(--i)));
-        transform-origin: 360px;
+        transform-origin: 360px !important;
         margin-left: 0.5rem;
         left: 1rem !important;
     }
@@ -200,6 +231,13 @@
     /* .container-fluid section.home .home-content {
         
     } */
+    section.home
+        .profession-container
+        .profession-box
+        .profession:nth-child(3) {
+        transform: rotate(180deg) translate(150px, 0px) !important;
+    }
+
     section.home .home-content h3 {
         font-size: 1.8rem !important;
         font-weight: 700;
@@ -233,7 +271,7 @@
     }
     section.home .profession-container .profession-box .profession {
         transform: rotate(calc(360deg / 4 * var(--i)));
-        transform-origin: 360px;
+        transform-origin: 450px !important;
         margin-left: 0.5rem;
         left: 4rem !important;
     }

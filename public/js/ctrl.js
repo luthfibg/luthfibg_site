@@ -25,6 +25,7 @@ let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header nav a");
 
 window.onscroll = () => {
+    progressLine();
     sections.forEach((sec) => {
         let top = window.scrollY;
         let offset = sec.offsetTop - 150;
@@ -42,8 +43,10 @@ window.onscroll = () => {
     });
 
     let header = document.querySelector(".header");
+    let progress = document.querySelector(".progress-container");
 
     header.classList.toggle("sticky", window.scrollY > 100);
+    progress.classList.toggle("indicated", window.scrollY > 100);
 
     // ======================= remove icon navbar when scroll ============================
     menuIcon.classList.remove("fa-xmark");
@@ -79,3 +82,13 @@ ScrollReveal().reveal(
         origin: "bottom",
     }
 );
+
+function progressLine() {
+    var winScroll =
+        document.body.scrollTop || document.documentElement.scrollTop;
+    var height =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("line-progress").style.width = scrolled + "%";
+}

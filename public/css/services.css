@@ -30,6 +30,7 @@ section.services .heading {
 .services-container .services-box h4 {
     height: 3rem;
     text-align: center;
+    font-weight: 700;
 }
 
 .services-container .services-box p {

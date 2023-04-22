@@ -3,6 +3,7 @@
     width: 100%;
     max-width: 90rem;
     padding: 5rem;
+    overflow: hidden;
 }
 
 .testimonial-content {
@@ -26,7 +27,7 @@
 
 .testimonial-content .testimonial-slide p {
     position: relative;
-    height: 26rem;
+    height: 24rem;
     overflow: hidden;
 }
 
@@ -51,4 +52,8 @@
 
 .testimonial-slide h4 {
     margin-bottom: 1rem;
+}
+
+.testimonial-slide a.btn {
+    margin-top: 1.5rem;
 }

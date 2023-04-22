@@ -13,9 +13,11 @@ section.contact form {
     margin-right: auto;
 }
 
-/* section.contact form input {
-
-} */
+section.contact form input[type="text"],
+section.contact form input[type="email"],
+section.contact form textarea {
+    background-color: var(--inputs) !important;
+}
 
 section.contact form textarea {
     resize: none;

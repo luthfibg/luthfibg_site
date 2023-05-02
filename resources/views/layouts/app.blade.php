@@ -15,6 +15,11 @@
     <script src="https://kit.fontawesome.com/ede41cc34b.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/47460187dd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    {{-- Py Script --}}
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
     {{-- Google Fonts --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,6 +38,7 @@
     <link rel="stylesheet" href="{{ asset('css/breakpoints.css') }}">
     {{-- <link rel="stylesheet" href="{{ asset('css/preloader.css') }}"> --}}
     <link rel="stylesheet" href="{{ asset('css/swiper_keyboard.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/rt_flag.css') }}">
     <link rel="stylesheet" href="{{ asset('css/header_style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/headline_style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/about_style.css') }}">
@@ -50,6 +56,7 @@
   <body style="background-color: var(--mirage);color: var(--ghost) !important;">
     {{-- <h1>{{ __('Hello, world!') }}</h1> --}}
     @include('components.header')
+    @include('components.realtime_flag')
     @yield('headline')
     @yield('content')
     @include('components.footer')

@@ -1,0 +1,10 @@
+.rt-flag {
+    position: fixed;
+    bottom: 0.6rem;
+    right: 1rem;
+    background: transparent;
+    width: fit-content;
+    height: fit-content;
+    font-size: 0.9rem;
+    z-index: 10;
+}

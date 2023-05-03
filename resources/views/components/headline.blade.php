@@ -51,9 +51,6 @@
             <div class="tooltip-arrow" data-popper-arrow></div>
         </div>
     </div>
-    <div style="position:fixed;top: -5rem;">
-        <h1>Test</h1>
-    </div>
 
     <div class="profession-container">
         <div class="profession-box d-flex justify-content-center align-items-center p-1">

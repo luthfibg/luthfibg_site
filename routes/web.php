@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GuestController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,3 +36,5 @@ Route::controller(GuestController::class)->group(function () {
     Route::put('home/update/{guest}', 'update')->name('guests.update');
     Route::delete('home/delete/{guest}', 'destroy')->name('guests.delete');
 });
+
+Route::get('auth', HomeController::class)->name('');

@@ -287,6 +287,12 @@
         right: 0 !important;
         width: 30% !important;
     }
+    .cf-auth .card {
+        width: 40%;
+        padding-left: 0.6rem;
+        padding-right: 0.6rem;
+        padding-bottom: 0.8rem;
+    }
 }
 
 /* Laptop L */

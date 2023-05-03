@@ -1,3 +1,5 @@
+@import url(theme.css);
+
 .cf-auth {
     display: flex;
     justify-content: center;
@@ -5,7 +7,11 @@
     width: 100%;
     height: 100vh;
 }
-
+.cf-auth .card .auth-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 2rem !important;
+}
 .cf-auth .card form > * {
     width: 100%;
 }
@@ -18,6 +24,7 @@
 .cf-auth .card form input {
     border-radius: 8px;
     font-size: 0.8rem;
+    background: var(--inputs) !important;
 }
 
 .cf-auth .card form {

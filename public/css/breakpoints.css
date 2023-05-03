@@ -113,6 +113,16 @@
         .profession:nth-child(4) {
         transform: rotate(90deg) translate(75px, 85px) !important;
     }
+    .cf-auth .card {
+        width: 50%;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+        padding-bottom: 1rem;
+        border-radius: 8px;
+    }
+    .cf-auth .card form .btn {
+        width: 65%;
+    }
 }
 
 /* Laptop S */
@@ -288,10 +298,14 @@
         width: 30% !important;
     }
     .cf-auth .card {
-        width: 40%;
+        width: 30%;
         padding-left: 0.6rem;
         padding-right: 0.6rem;
         padding-bottom: 0.8rem;
+        border-radius: 8px;
+    }
+    .cf-auth .card form .btn {
+        width: 65%;
     }
 }
 
@@ -880,6 +894,22 @@
     }
     section.contact form label {
         font-size: 0.9rem !important;
+    }
+    .cf-auth .card {
+        width: 90%;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+        padding-bottom: 1rem;
+        border-radius: 8px;
+    }
+    .cf-auth .card .auth-title {
+        font-size: 1.5rem !important;
+        font-weight: 600 !important;
+        margin-bottom: 1.6rem !important;
+    }
+    .cf-auth .card form .btn {
+        width: 100%;
+        border-radius: 8px !important;
     }
 }
 

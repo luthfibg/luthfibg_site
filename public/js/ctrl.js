@@ -53,7 +53,7 @@ window.onscroll = () => {
     navbar.classList.remove("active");
 };
 
-// ======================= remove icon navbar when scroll ============================
+// ======================= theme switcher ============================
 
 let darkModeIcon = document.querySelector("#darkMode-icon");
 
@@ -82,6 +82,8 @@ ScrollReveal().reveal(
         origin: "bottom",
     }
 );
+
+// ======================= scroll indicator ============================
 
 function progressLine() {
     var winScroll =

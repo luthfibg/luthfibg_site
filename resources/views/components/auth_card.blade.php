@@ -1,5 +1,5 @@
 <div class="card">
-    <h2 class="auth-title my-3 text-center">Login</h2>
+    <h2 class="auth-title my-3 text-center">Autentikasi</h2>
     <form action="https://" method="POST">
         <div class="form-floating mb-3" class="fs-float">
             <input type="email" class="form-control" name="email" id="floatingEmail" placeholder="Email">

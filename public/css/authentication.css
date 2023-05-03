@@ -1,0 +1,28 @@
+.cf-auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.cf-auth .card form > * {
+    width: 100%;
+}
+
+.cf-auth .card form .fs-float,
+.cf-auth .card form .btn {
+    margin-top: 2rem;
+}
+
+.cf-auth .card form input {
+    border-radius: 8px;
+    font-size: 0.8rem;
+}
+
+.cf-auth .card form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

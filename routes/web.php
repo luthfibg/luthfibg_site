@@ -37,4 +37,4 @@ Route::controller(GuestController::class)->group(function () {
     Route::delete('home/delete/{guest}', 'destroy')->name('guests.delete');
 });
 
-Route::get('auth', HomeController::class)->name('');
+Route::get('auth',[HomeController::class , 'create'])->name('login');

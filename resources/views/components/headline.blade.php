@@ -44,7 +44,7 @@
                 <div class="tooltip-arrow" data-popper-arrow></div>
             </div>
         </div>
-        <a href="http://" class="btn mt-3" data-tooltip-target="tooltip-dark">
+        <a href="{{ route('login') }}" class="btn mt-3" data-tooltip-target="tooltip-dark">
             <i class="fa-solid fa-file-arrow-down"></i> CV</a>
         <div id="tooltip-dark" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
             Download CV

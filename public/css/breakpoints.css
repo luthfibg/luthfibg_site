@@ -299,7 +299,8 @@
     }
 
     .cf-auth .card form .btn {
-        width: 65%;
+        width: 85%;
+        margin-bottom: 2rem;
     }
 }
 

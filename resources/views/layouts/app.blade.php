@@ -44,6 +44,7 @@
     <link rel="stylesheet" href="{{ asset('css/about_style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/services.css') }}">
     <link rel="stylesheet" href="{{ asset('css/portfolio.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/m_cross.css') }}">
     <link rel="stylesheet" href="{{ asset('css/testimonials.css') }}">
     <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
@@ -55,6 +56,7 @@
   </head>
   <body style="background-color: var(--mirage);color: var(--ghost) !important;">
     {{-- <h1>{{ __('Hello, world!') }}</h1> --}}
+    {{-- <script src="https://cdn.jsdelivr.net/npm/tag-cloud@2.0.0/lib/tagCloud.min.js"></script> --}}
     @include('components.header')
     @include('components.realtime_flag')
     @yield('headline')

@@ -1,0 +1,11 @@
+.tagcloud {
+    display: inline-block;
+    top: 100px;
+    left: 32%;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.tagcloud--item:hover {
+    color: var(--iron);
+}

@@ -6,25 +6,25 @@
             <form action="https://" method="POST">
                 <div class="form-floating mb-3" class="fs-float">
                     <input type="email" class="form-control" name="email" id="floatingEmail" placeholder="Email">
-                    <label for="floatingEmail">Alamat Email</label>
+                    <label for="floatingEmail">{{ __('Alamat Email') }}</label>
                 </div>
                 <div class="form-floating mb-3">
                     <input type="password" class="form-control" name="password" id="floatingPassword" placeholder="Password">
-                    <label for="floatingPassword">Password</label>
+                    <label for="floatingPassword">{{ __('Password') }}</label>
                 </div>
-                <label for="chk" aria-hidden="true" class="act-label">Saya lupa password</label>
-                <button type="submit" name="submit_log" class="btn submit-login">{{ __('Login') }}</button>    
+                <label for="chk" aria-hidden="true" class="act-label">{{ __('Saya lupa password') }}</label>
+                <button type="submit" name="submit_log" class="btn submit-login">{{ __('Masuk') }}</button>    
             </form>
         </div>
         <div class="backside">
-            <h2 class="auth-title my-3 text-center">Lupa Password</h2>
+            <h2 class="auth-title my-3 text-center">{{ __('Lupa Password') }}</h2>
             <form action="https://" method="POST">
                 <div class="form-floating mb-3" class="fs-float">
                     <input type="email" class="form-control" name="email" id="floatingEmail" placeholder="Email">
-                    <label for="floatingEmail">Alamat Email</label>
+                    <label for="floatingEmail">{{ __('Alamat Email')}}</label>
                 </div>
                 <button type="submit" name="submit_log" class="btn submit-login">{{ __('Kirim Permintaan') }}</button>
-                <label for="chk" aria-hidden="true" class="act-label">Kembali login</label>
+                <label for="chk" aria-hidden="true" class="act-label">{{ __('Kembali login') }}</label>
             </form>
         </div>
     </div>
@@ -38,10 +38,10 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p style="font-size: 0.9rem;">Kami perlu memastikan identitas anda, sebelum proses semacam pengunduhan file private dilakukan. Fitur registrasi pengguna sengaja tidak disematkan secara langsung untuk menghindari penyalahgunaan akun. Untuk registrasi yang sah silahkan hubungi saya melalui linkedin ataupun email.</p>
+                <p style="font-size: 0.9rem;">{{ __('Kami perlu memastikan identitas anda, sebelum proses semacam pengunduhan file private dilakukan. Fitur registrasi sengaja tidak disematkan secara langsung untuk menghindari penyalahgunaan akun. Untuk registrasi yang sah silahkan hubungi kami melalui linkedin ataupun email.') }}</p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ __('Tutup') }}</button>
             </div>
         </div>
     </div>

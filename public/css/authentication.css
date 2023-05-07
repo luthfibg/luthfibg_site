@@ -58,6 +58,10 @@
     background: var(--vulcan);
     box-shadow: 0 5px 10px var(--astro-blue);
 }
+.cf-auth .modal .modal-dialog .modal-content .modal-body p {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
 .cf-auth .cwr .card .backside {
     transform: rotateY(180deg);
 }

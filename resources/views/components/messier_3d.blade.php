@@ -1,6 +1,6 @@
 
 <section class="m-cross">
-    <h2 class="heading"> <span>Messier</span> Crossing</h2>
+    <h2 class="heading"> <span>Spherical</span> Crossing</h2>
     <span class="Sphere"></span>
 
     <!-- Including the TagCloud.js script CDN in the document    -->

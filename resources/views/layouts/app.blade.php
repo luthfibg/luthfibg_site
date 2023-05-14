@@ -42,6 +42,7 @@
     <link rel="stylesheet" href="{{ asset('css/header_style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/headline_style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/about_style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/edu.css') }}">
     <link rel="stylesheet" href="{{ asset('css/services.css') }}">
     <link rel="stylesheet" href="{{ asset('css/portfolio.css') }}">
     <link rel="stylesheet" href="{{ asset('css/m_cross.css') }}">

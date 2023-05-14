@@ -10,6 +10,7 @@
 
 @section('content')
     @include('components.about')
+    @include('components.education')
     @include('components.services')
     @include('layouts.portfolio_plain')
     @include('components.messier_3d')

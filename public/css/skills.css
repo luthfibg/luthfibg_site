@@ -1,0 +1,37 @@
+.skills {
+    min-height: auto;
+    padding-bottom: 7rem;
+    background: var(--vulcan);
+}
+
+.skills .skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.skills-row .skills-column {
+    flex: 1 1 30rem;
+}
+
+.skills-column .title {
+    font-size: 2rem;
+    margin: 0 0 1.5rem;
+}
+
+.skills-box .skills-content {
+    position: relative;
+    border: 0.2rem solid var(--cerulean);
+    border-radius: 0.6rem;
+    padding: 0.5rem 1.5rem;
+}
+
+.skills-content .progress2 {
+    padding: 1rem 0;
+}
+
+.skills-content .progress2 h3 {
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+}

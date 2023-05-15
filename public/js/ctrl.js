@@ -77,7 +77,7 @@ ScrollReveal().reveal(
     }
 );
 ScrollReveal().reveal(
-    ".home-img, img.avatar, .service-container, .portfolio-box, .testimonial-wrapper, .contact form, .card",
+    ".home-img, img.avatar, .service-container, .portfolio-box, .testimonial-wrapper, .contact form, .card, .edu-row, .skills-row",
     {
         origin: "bottom",
     }

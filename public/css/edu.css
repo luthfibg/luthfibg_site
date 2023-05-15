@@ -1,0 +1,91 @@
+section.edu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
+}
+
+.edu-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin-top: 3rem;
+}
+
+.edu-row .edu-column {
+    flex: 1 1 30rem;
+}
+
+.edu-column .title {
+    font-size: 2rem;
+    margin: 0 0 1.5rem 2rem;
+    color: var(--raven);
+}
+
+.edu-column .edu-box {
+    border-left: 0.2rem solid var(--cerulean);
+}
+
+.edu-box .edu-content {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.edu-box .edu-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -0.9rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    background: var(--cerulean);
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+}
+
+.edu-content .content {
+    position: relative;
+    padding: 1.5rem;
+    border: 0.1rem solid var(--cerulean);
+    border-radius: 0.6rem;
+    margin-bottom: 1.6rem;
+    overflow: hidden;
+    /* box-shadow: var(--box-shadow); */
+}
+
+/* .edu-content .content > * {
+    z-index: 2;
+} */
+
+.edu-content .content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--vulcan);
+    z-index: -1;
+    transition: 0.5s ease;
+}
+
+.edu-content .content:hover::before {
+    width: 100%;
+}
+
+.edu-content .content .year {
+    font-size: 1rem;
+    color: var(--cerulean);
+    padding-bottom: 0.5rem;
+}
+
+.edu-content .content .year i {
+    padding-right: 0.5rem;
+}
+
+.edu-content .content h3 {
+    color: var(--iron);
+    margin-top: 1rem;
+}

@@ -1,0 +1,117 @@
+.skills {
+    min-height: auto;
+    padding-bottom: 7rem;
+    background: var(--vulcan);
+}
+
+.skills h2.heading {
+    margin-bottom: 3rem;
+}
+
+.skills .skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin-bottom: 3rem;
+}
+
+.skills .skills-row2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.skills-row .skills-column {
+    flex: 1 1 30rem;
+}
+
+.skills-column .title {
+    font-size: 1.6rem;
+    margin: 0 0 1.5rem;
+    color: var(--raven);
+}
+
+.skills-box .skills-content {
+    position: relative;
+    border-left: 0.2rem solid var(--cerulean);
+    border-right: 0.2rem solid var(--cerulean);
+    box-shadow: var(--box-shadow);
+    border-radius: 0.6rem;
+    padding: 0.5rem 1.5rem;
+    overflow: hidden;
+}
+
+.skills-box .skills-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--mirage);
+    z-index: -1;
+    transition: 0.5s ease;
+}
+
+.skills-box .skills-content:hover::before {
+    width: 100%;
+}
+
+.skills-content .progress2 {
+    padding: 0.5rem 0;
+}
+
+.skills-content .progress2 h3 {
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-content .progress2 .bar {
+    height: 1.1rem;
+    border-radius: 0.4rem;
+    border: 0.1rem solid var(--cerulean);
+    padding: 0.2rem;
+    margin: 1rem 0;
+}
+
+.skills-content .progress2 .bar span {
+    display: block;
+    height: 100%;
+    border-radius: 0.3rem;
+    background: var(--cerulean);
+}
+
+/* Left Part */
+.skills-column:nth-child(1) .skills-content .progress2:nth-child(1) .bar span {
+    width: 90%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress2:nth-child(2) .bar span {
+    width: 85%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress2:nth-child(3) .bar span {
+    width: 10%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress2:nth-child(4) .bar span {
+    width: 15%;
+}
+
+/* Right Part */
+.skills-column:nth-child(2) .skills-content .progress2:nth-child(1) .bar span {
+    width: 90%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress2:nth-child(2) .bar span {
+    width: 20%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress2:nth-child(3) .bar span {
+    width: 60%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress2:nth-child(4) .bar span {
+    width: 10%;
+}

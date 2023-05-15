@@ -1,6 +1,12 @@
+/* section.m-cross {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
 .tagcloud {
     display: inline-block;
-    top: 100px;
+    top: 55px;
     left: 32%;
     font-weight: 600;
     letter-spacing: 2px;

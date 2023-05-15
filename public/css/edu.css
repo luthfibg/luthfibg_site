@@ -62,11 +62,11 @@ section.edu {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 0;
     height: 100%;
     background: var(--vulcan);
     z-index: -1;
-    /* transition: 0.5s ease; */
+    transition: 0.5s ease;
 }
 
 .edu-content .content:hover::before {

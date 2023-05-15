@@ -25,23 +25,23 @@
             </div>
         </div>
         <div class="skills-column">
-            <h3 class="title">Keterampilan Profesi</h3>
+            <h3 class="title">Keterampilan Pendukung</h3>
             <div class="skills-box">
                 <div class="skills-content">
                     <div class="progress2">
-                        <h3>Desain Aplikasi <span>70%</span></h3>
+                        <h3>Bahasa Inggris <span>90%</span></h3>
                         <div class="bar"><span></span></div>
                     </div>
                     <div class="progress2">
-                        <h3>Manajemen Backend<span>90%</span></h3>
+                        <h3>Pemrograman Mobile <span>20%</span></h3>
                         <div class="bar"><span></span></div>
                     </div>
                     <div class="progress2">
-                        <h3>Perakitan PC <span>30%</span></h3>
+                        <h3>IoT <span>60%</span></h3>
                         <div class="bar"><span></span></div>
                     </div>
                     <div class="progress2">
-                        <h3>Perancangan IoT <span>60%</span></h3>
+                        <h3>Hacking <span>10%</span></h3>
                         <div class="bar"><span></span></div>
                     </div>
                 </div>

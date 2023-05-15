@@ -42,6 +42,7 @@ section.edu {
     height: 1.6rem;
     background: var(--cerulean);
     border-radius: 50%;
+    box-shadow: var(--box-shadow);
 }
 
 .edu-content .content {
@@ -51,6 +52,7 @@ section.edu {
     border-radius: 0.6rem;
     margin-bottom: 1.6rem;
     overflow: hidden;
+    /* box-shadow: var(--box-shadow); */
 }
 
 /* .edu-content .content > * {

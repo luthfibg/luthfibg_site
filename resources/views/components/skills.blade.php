@@ -48,4 +48,7 @@
             </div>
         </div>
     </div>
+    <div class="skills-row2">
+        <a href="#" class="btn btn-sm"><i class="fa-solid fa-chart-simple fa-lg"></i> Selengkapnya</a>
+    </div>
 </section>

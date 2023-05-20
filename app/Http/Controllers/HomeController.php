@@ -25,6 +25,14 @@ class HomeController extends Controller
     }
 
     /**
+     * View CV downloader page
+     */
+    public function cvdwldr(): Response
+    {
+        return response(view("layouts.cvdownloader"));
+    }
+
+    /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request): RedirectResponse

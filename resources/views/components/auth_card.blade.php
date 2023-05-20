@@ -3,9 +3,10 @@
     <div class="card">
         <div class="frontside">
             <h2 class="auth-title my-3 text-center">{{ __('Autentikasi') }}&nbsp;<a href="#"><i class="fa-regular fa-circle-question fa-xs" style="color: var(--cerulean) !important;" data-bs-toggle="modal" data-bs-target="#info-login"></i></a></h2>
-            <form action="https://" method="POST">
+            <form action="/auth/login" method="POST">
+                @csrf
                 <div class="form-floating mb-3" class="fs-float">
-                    <input type="email" class="form-control" name="email" id="floatingEmail" placeholder="Email">
+                    <input type="email" class="form-control" name="email" id="floatingEmail" placeholder="Email" value="{{ Session::get('email') }}">
                     <label for="floatingEmail">{{ __('Alamat Email') }}</label>
                 </div>
                 <div class="form-floating mb-3">

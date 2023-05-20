@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GuestController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AuthCustomController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -37,4 +39,11 @@ Route::controller(GuestController::class)->group(function () {
     Route::delete('home/delete/{guest}', 'destroy')->name('guests.delete');
 });
 
-Route::get('auth',[HomeController::class , 'create'])->name('login');
+// Home Routes
+// Route::get('auth', [HomeController::class, 'create'])->name('login');
+Route::get('home/downloadcv', [HomeController::class, 'cvdwldr']);
+
+// Auth Routes
+Route::get('auth', [AuthCustomController::class, 'index']);
+Route::post('auth/login', [AuthCustomController::class, 'login'])->name('login');
+Route::get('auth/logout', [AuthCustomController::class, 'logout']);

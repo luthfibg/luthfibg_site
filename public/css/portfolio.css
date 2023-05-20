@@ -83,6 +83,8 @@ section.portfolio-plain .portfolio-container .portfolio-box {
     border-radius: 0.8rem;
     box-shadow: 0 0 1rem var(--astro-blue);
     overflow: hidden;
+    width: 23rem;
+    height: 16rem;
 }
 
 section.portfolio-plain .portfolio-container .portfolio-box:hover {
@@ -108,11 +110,12 @@ section.portfolio-plain .portfolio-container .portfolio-box .portfolio-layer {
     color: var(--cerulean);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     flex-direction: column;
     text-align: center;
     padding: 0 4rem;
     opacity: 0;
+    padding-bottom: 2rem;
     transition: 0.5s ease;
 }
 
@@ -120,7 +123,7 @@ section.portfolio-plain
     .portfolio-container
     .portfolio-box:hover
     .portfolio-layer {
-    opacity: 1;
+    opacity: 0.9;
 }
 
 section.portfolio-plain

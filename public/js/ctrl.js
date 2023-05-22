@@ -94,3 +94,12 @@ function progressLine() {
     var scrolled = (winScroll / height) * 100;
     document.getElementById("line-progress").style.width = scrolled + "%";
 }
+
+// ======================= bootstrap tooltip initializer ============================
+
+// const tooltipTriggerList = document.querySelectorAll(
+//     '[data-bs-toggle="tooltip"]'
+// );
+// const tooltipList = [...tooltipTriggerList].map(
+//     (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+// );

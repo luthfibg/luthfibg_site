@@ -201,3 +201,8 @@ input[type="submit"] {
     width: 12rem;
     text-align: center;
 }
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--astro-blue);
+    --bs-tooltip-color: var(--iron);
+}

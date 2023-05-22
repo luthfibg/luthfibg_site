@@ -13,8 +13,35 @@
                     <input type="password" class="form-control" name="password" id="floatingPassword" placeholder="Password">
                     <label for="floatingPassword">{{ __('Password') }}</label>
                 </div>
+                <div class="lv-socialite">
+                    <a href="{{ route('google.login') }}" data-tooltip-target="tooltip-g">
+                        <i class="fa-brands fa-google"></i>
+                    </a>
+                    <a href="" data-tooltip-target="tooltip-fa">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="" data-tooltip-target="tooltip-git">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <div id="tooltip-g" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                        Login dengan google
+                        <div class="tooltip-arrow" data-popper-arrow></div>
+                    </div>
+                    <div id="tooltip-fa" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                        Login dengan facebook
+                        <div class="tooltip-arrow" data-popper-arrow></div>
+                    </div>
+                    <div id="tooltip-git" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                        Login dengan github
+                        <div class="tooltip-arrow" data-popper-arrow></div>
+                    </div>
+                </div>
                 <label for="chk" aria-hidden="true" class="act-label">{{ __('Saya lupa password') }}</label>
-                <button type="submit" name="submit_log" class="btn submit-login">{{ __('Masuk') }}</button>    
+                <button type="submit" name="submit_log" class="btn submit-login" data-tooltip-target="tooltip-log">{{ __('Masuk') }}</button>
+                <div id="tooltip-log" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                    Submit
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>    
             </form>
         </div>
         <div class="backside">

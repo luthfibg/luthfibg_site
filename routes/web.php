@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GuestController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AuthCustomController;
+use App\Http\Controllers\GoogleController;
+
 
 
 /*
@@ -47,3 +49,8 @@ Route::get('home/downloadcv', [HomeController::class, 'cvdwldr']);
 Route::get('auth', [AuthCustomController::class, 'index']);
 Route::post('auth/login', [AuthCustomController::class, 'login'])->name('login');
 Route::get('auth/logout', [AuthCustomController::class, 'logout']);
+
+// Google Redirect
+Route::get('auth/google', [GoogleController::class, 'redirectToGoogle'])->name('google.login');
+Route::get('auth/google', [GoogleController::class, 'redirectToGoogle'])->name('google.login');
+Route::get('auth/google/callback', [GoogleController::class, 'googleCallBackHandler'])->name('google.callback');

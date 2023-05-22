@@ -37,6 +37,7 @@
   <body style="background-color: var(--mirage);color: var(--ghost) !important;">
 
     <div class="container-fluid cf-auth">
+        @include('components.alert')
         @include('components.auth_card')
     </div>    
 

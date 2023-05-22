@@ -25,11 +25,15 @@ class AuthCustomController extends Controller
     {
         Session::flash('email', $request->email);
         $request->validate([
-            'email' => 'required',
-            'password' => 'required',
+            'email' => 'required|email:rfc|string',
+            'password' => 'required|min:6|max:12',
         ], [
                 'email.required' => 'Email wajib diisi',
+                'email.email' => 'Email harus mengandung karakter \'@\'',
+                'email.string' => 'Format email seharusnya bukan nomor',
                 'password.required' => 'Password wajib diisi',
+                'password.min' => 'Panjang minimal password adalah 6 karakter',
+                'password.max' => 'Panjang maksimal password adalah 12 karakter',
             ]);
 
         $data = [
@@ -37,7 +41,7 @@ class AuthCustomController extends Controller
             'password' => $request->password,
         ];
         if (Auth::attempt($data)) {
-            return redirect('home/downloadcv')->with('success', 'Login berhasil, sekarang anda dapat mendownload CV');
+            return redirect('home/downloadcv')->with('success', 'Autentikasi berhasil, sekarang anda dapat mendownload CV');
         } else {
             return redirect('auth')->withErrors('Nama email atau password tidak valid');
         }

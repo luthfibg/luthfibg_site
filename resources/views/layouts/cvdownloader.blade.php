@@ -37,6 +37,7 @@
   <body style="background-color: var(--mirage);color: var(--ghost) !important;">
 
     <div class="container-fluid cf-cvdwldr">
+      @include('components.alert')
         <h1>CV DOWNLOADER</h1>
         <input type="button" class="btn" value="Download CV">
         <a href="/auth/logout" style="text-decoration: none;color: orangered;">Keluar</a>

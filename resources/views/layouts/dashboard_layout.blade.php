@@ -63,6 +63,7 @@
 
     {{-- Custom JS --}}
     <script src="{{ asset('js/ctrl.js') }}"></script>
+    <script src="{{ asset('js/sidebar_ctrl.js') }}"></script>
     {{-- <script src="{{ asset('js/preloader.js') }}"></script> --}}
     <script src="{{ asset('js/swiper-keyboard.js') }}"></script>
 

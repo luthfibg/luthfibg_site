@@ -5,13 +5,15 @@
     background-color: inherit;
     min-height: 100vh;
     top: 0;
-    left: 250px;
-    width: calc(100% - 250px);
+    left: 78px;
+    width: calc(100% - 78px);
     transition: all 0.5s ease;
-    z-index: w;
+    z-index: 2;
 }
 
 .df .title {
+    position: absolute;
+    top: 2rem;
     display: inline-block;
     color: var(--iron);
 }

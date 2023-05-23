@@ -1,13 +1,13 @@
 <div class="sidebar">
     <div class="logo-details">
-        <i class="fa-brands fa-keycdn"></i>
+        <i class="fa-brands fa-keycdn icon"></i>
         <div class="logo-name">Lunatika</div>
         <i class="fa-solid fa-bars" id="btn"></i>
     </div>
     <ul class="nav-list">
         <li>
             <i class="fa-solid fa-magnifying-glass"></i>
-            <input class="form-control" type="text" placeholder="Cari...">
+            <input class="form-control" type="text" placeholder="Cari apa?">
             <span class="tooltip">Search</span>
         </li>
         <li>

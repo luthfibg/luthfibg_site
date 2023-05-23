@@ -43,7 +43,8 @@ Route::controller(GuestController::class)->group(function () {
 
 // Home Routes
 // Route::get('auth', [HomeController::class, 'create'])->name('login');
-Route::get('home/downloadcv', [HomeController::class, 'cvdwldr']);
+Route::get('home/dashboard/downloadcv', [HomeController::class, 'cvdwldr']);
+Route::get('home/dashboard', [HomeController::class, 'dashboard'])->name('dashboard');
 
 // Auth Routes
 Route::get('auth', [AuthCustomController::class, 'index']);

@@ -41,7 +41,7 @@ class AuthCustomController extends Controller
             'password' => $request->password,
         ];
         if (Auth::attempt($data)) {
-            return redirect('home/downloadcv')->with('success', 'Autentikasi berhasil, sekarang anda dapat mendownload CV');
+            return redirect('home/dashboard/downloadcv')->with('success', 'Autentikasi berhasil, sekarang anda dapat mendownload CV');
         } else {
             return redirect('auth')->withErrors('Nama email atau password tidak valid');
         }

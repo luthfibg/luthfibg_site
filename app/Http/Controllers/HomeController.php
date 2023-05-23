@@ -33,6 +33,14 @@ class HomeController extends Controller
     }
 
     /**
+     * View dashboard page
+     */
+    public function dashboard(): Response
+    {
+        return response(view("pages.dashboard"));
+    }
+
+    /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request): RedirectResponse

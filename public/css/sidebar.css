@@ -1,0 +1,167 @@
+@import "theme.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.sidebar {
+    min-height: 100vh;
+    width: 250px;
+    padding: 6px 14px;
+    z-index: 90;
+    background-color: var(--vulcan);
+    transition: all 0.5 ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sidebar .logo-details {
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.sidebar .logo-details .logo-name {
+    color: var(--iron);
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+.sidebar .logo-details #btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 1.3rem;
+    text-align: right;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.sidebar i {
+    color: var(--iron);
+    height: 2.5rem;
+    line-height: 2.5rem;
+    min-width: 3rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.sidebar li .link-name {
+    font-size: 0.9rem;
+}
+
+.sidebar .nav-list {
+    margin-top: 0.8rem;
+    height: 100%;
+}
+
+.sidebar li {
+    position: relative;
+    margin: 0.4rem 0;
+    list-style: none;
+}
+
+.sidebar li a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    text-decoration: none;
+    background-color: transparent;
+    position: relative;
+    transition: all 0.5s ease;
+    z-index: 12;
+}
+
+.sidebar li a:hover i,
+.sidebar li a:hover span {
+    color: var(--vulcan);
+    transition: all 0.5s ease;
+}
+
+.sidebar li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    background-color: var(--cerulean);
+    border-radius: 0.2rem;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: left;
+    z-index: -2;
+}
+
+.sidebar li a:hover::after {
+    transform: scaleX(1);
+    color: var(--iron);
+}
+
+.sidebar li i {
+    height: 35px;
+    line-height: 35px;
+    font-size: 18px;
+    border-radius: 0.2rem;
+}
+
+.sidebar li.profile {
+    position: fixed;
+    height: 60px;
+    width: 250px;
+    left: 0;
+    bottom: 8px;
+    padding: 10px 14px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.sidebar .profile .profile_details {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.sidebar li img {
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.sidebar li.profile .name,
+.sidebar li.profile .designation {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--cerulean);
+    white-space: nowrap;
+}
+
+.sidebar li.profile .designation {
+    font-size: 1.1rem;
+}
+
+.sidebar .profile #logout {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: var(--astro-blue);
+    width: 50px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}

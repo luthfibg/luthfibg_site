@@ -24,7 +24,7 @@ class GoogleController extends Controller
                 $findUser->save();
             }
             Auth::login($findUser);
-            return redirect()->intended('home/downloadcv')->with('success', 'Autentikasi berhasil, sekarang anda dapat mendownload CV');
+            return redirect()->intended('home/dashboard/downloadcv')->with('success', 'Autentikasi berhasil, sekarang anda dapat mendownload CV');
         } else {
             $findUser = User::create([
                 'name' => $user->getName(),
@@ -34,7 +34,7 @@ class GoogleController extends Controller
             ]);
 
             Auth::login($findUser);
-            return redirect()->intended('home/downloadcv')->with('success', 'Autentikasi berhasil, sekarang anda dapat mendownload CV');
+            return redirect()->intended('home/dashboard/downloadcv')->with('success', 'Autentikasi berhasil, sekarang anda dapat mendownload CV');
         }
     }
 }

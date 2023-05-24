@@ -40,7 +40,7 @@
       @include('components.alert')
         <h1>CV DOWNLOADER</h1>
         <input type="button" class="btn" value="Download CV">
-        <a href="/auth/logout" style="text-decoration: none;color: orangered;">Keluar</a>
+        <a href="/auth-user/logout" style="text-decoration: none;color: orangered;">Keluar</a>
     </div>    
 
     {{-- JS Link Referrer --}}

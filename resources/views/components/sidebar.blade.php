@@ -67,7 +67,7 @@
                     <div class="designation">{{ Auth::user()->email }}</div>
                 </div>
             </div>
-            <a href="" class="a-logout">
+            <a href="{{ route('logout.account') }}" class="a-logout">
                 <i class="fa-solid fa-right-from-bracket" id="logout"></i>
             </a>
             {{-- <i class="fa-solid fa-right-from-bracket" id="logout"></i> --}}

@@ -9,11 +9,13 @@
     width: calc(100% - 78px);
     transition: all 0.5s ease;
     z-index: 2;
+    padding: 1rem !important;
 }
 
 .df .title {
-    position: absolute;
-    top: 2rem;
+    /* position: absolute; */
+    margin: 1rem;
     display: inline-block;
     color: var(--iron);
+    font-size: 1.6rem;
 }

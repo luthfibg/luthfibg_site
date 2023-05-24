@@ -2,22 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Hash;
+
 
 class AuthCustomController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function register(): Response
-    {
-        return response(view('layouts.register_layout'));
-    }
-
     /**
      * Display a listing of the resource.
      */
@@ -57,7 +52,7 @@ class AuthCustomController extends Controller
             'password' => $request->password,
         ];
         if (Auth::attempt($data)) {
-            return redirect('home/dashboard')->with('success', 'Autentikasi berhasil, selamat datang di dashboard Muhamad Luthfi');
+            return redirect('home/dashboard')->with('success', 'Autentikasi berhasil, selamat datang kembali di dashboard Muhamad Luthfi');
         } else {
             return redirect('auth-user')->withErrors('Nama email atau password tidak valid');
         }
@@ -103,11 +98,53 @@ class AuthCustomController extends Controller
     }
 
     /**
+     * Display a listing of the resource.
+     */
+    public function register(): Response
+    {
+        return response(view('layouts.register_layout'));
+    }
+
+
+    /**
      * Show the form for creating a new resource.
      */
-    public function create(): Response
+    public function create(Request $request): RedirectResponse
     {
-        return response();
+        Session::flash('name', $request->name);
+        Session::flash('email', $request->email);
+        $request->validate([
+            'name' => 'required|string',
+            'email' => 'required|email:rfc|string|unique:users',
+            'password' => 'required|min:6|max:12',
+        ], [
+                'name.required' => 'Nama wajib diisi',
+                'name.string' => 'Nama tidak boleh mengandung angka',
+                'email.required' => 'Email wajib diisi',
+                'email.email' => 'Email harus mengandung karakter \'@\'',
+                'email.string' => 'Format email seharusnya bukan nomor',
+                'email.unique' => 'Email tersebut telah terdaftar',
+                'password.required' => 'Password wajib diisi',
+                'password.min' => 'Panjang minimal password adalah 6 karakter',
+                'password.max' => 'Panjang maksimal password adalah 12 karakter',
+            ]);
+
+        $data = [
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+        ];
+        User::create($data);
+
+        $login = [
+            'email' => $request->email,
+            'password' => $request->password,
+        ];
+        if (Auth::attempt($login)) {
+            return redirect('home/dashboard')->with('success', 'Registrasi berhasil, selamat datang ' . Auth::user()->name . ', di akun barumu di dashboard Muhamad Luthfi');
+        } else {
+            return redirect('home/reg')->withErrors('Periksa kembali inputan anda');
+        }
     }
 
     /**

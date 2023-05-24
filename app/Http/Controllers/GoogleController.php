@@ -18,6 +18,32 @@ class GoogleController extends Controller
     {
         $user = Socialite::driver('google')->stateless()->user();
         $findUser = User::where('google_id', $user->getId())->first();
+
+        if ($findUser) {
+            if (!($findUser->google_id)) {
+                $findUser->google_id = $user->id;
+                $findUser->save();
+            }
+            Auth::login($findUser);
+            return redirect()->intended('home/dashboard')->with('success', 'Autentikasi berhasil, sekarang anda dapat mendownload CV');
+        } else {
+            $findUser = User::create([
+                'name' => $user->getName(),
+                'email' => $user->getEmail(),
+                'google_id' => $user->getId(),
+                'password' => bcrypt('1235678'),
+            ]);
+
+            Auth::login($findUser);
+            return redirect()->intended('home/dashboard')->with('success', 'Autentikasi berhasil, sekarang anda dapat mendownload CV');
+        }
+    }
+
+    public function googleCallBackHandlerCV()
+    {
+        $user = Socialite::driver('google')->stateless()->user();
+        $findUser = User::where('google_id', $user->getId())->first();
+
         if ($findUser) {
             if (!($findUser->google_id)) {
                 $findUser->google_id = $user->id;

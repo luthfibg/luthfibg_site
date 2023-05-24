@@ -38,7 +38,7 @@
 
     <div class="container-fluid cf-auth">
         @include('components.alert')
-        @include('components.auth_card_duplicate')
+        @include('components.auth_card')
     </div>    
 
     {{-- JS Link Referrer --}}

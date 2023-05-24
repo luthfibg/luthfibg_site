@@ -3,14 +3,14 @@
     <div class="card">
         <div class="frontside">
             <h2 class="auth-title my-3 text-center">{{ __('Autentikasi') }}&nbsp;<a href="#"><i class="fa-regular fa-circle-question fa-xs" style="color: var(--cerulean) !important;" data-bs-toggle="modal" data-bs-target="#info-login"></i></a></h2>
-            <form action="{{ route('login.user') }}" method="POST">
+            <form action="{{ route('login') }}" method="POST">
                 @csrf
                 <div class="form-floating mb-3" class="fs-float">
-                    <input type="email" class="form-control" name="email" id="floatingEmail" placeholder="Email" value="{{ Session::get('email') }}">
+                    <input type="email" class="form-control" name="emailsc" id="floatingEmail" placeholder="Email" value="{{ Session::get('email') }}">
                     <label for="floatingEmail">{{ __('Alamat Email') }}</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="password" class="form-control" name="password" id="floatingPassword" placeholder="Password">
+                    <input type="password" class="form-control" name="passwordsc" id="floatingPassword" placeholder="Password">
                     <label for="floatingPassword">{{ __('Password') }}</label>
                 </div>
                 <div class="lv-socialite">
@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <label for="chk" aria-hidden="true" class="act-label">{{ __('Saya lupa password') }}</label>
-                <button type="submit" name="submit_log" class="btn submit-login" data-tooltip-target="tooltip-log">{{ __('Masuk') }}</button>
+                <button type="submit" name="submit_logsc" class="btn submit-login-2" data-tooltip-target="tooltip-log">{{ __('Masuk') }}</button>
                 <div id="tooltip-log" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
                     Submit
                     <div class="tooltip-arrow" data-popper-arrow></div>

@@ -47,11 +47,18 @@ Route::get('home/dashboard/downloadcv', [HomeController::class, 'cvdwldr']);
 Route::get('home/dashboard', [HomeController::class, 'dashboard'])->name('dashboard');
 
 // Auth Routes
-Route::get('auth', [AuthCustomController::class, 'index']);
-Route::post('auth/login', [AuthCustomController::class, 'login'])->name('login');
+Route::get('auth-user', [AuthCustomController::class, 'index']);
+Route::post('auth-user/login', [AuthCustomController::class, 'login'])->name('login.user');
+
+Route::get('auth', [AuthCustomController::class, 'indexCv']);
+Route::post('auth/login', [AuthCustomController::class, 'loginCv'])->name('login');
 Route::get('auth/logout', [AuthCustomController::class, 'logout']);
 
 // Google Redirect
 Route::get('auth/google', [GoogleController::class, 'redirectToGoogle'])->name('google.login');
-Route::get('auth/google', [GoogleController::class, 'redirectToGoogle'])->name('google.login');
 Route::get('auth/google/callback', [GoogleController::class, 'googleCallBackHandler'])->name('google.callback');
+Route::get('auth/google/callback/cv', [GoogleController::class, 'googleCallBackHandlerCV'])->name('google.callback.cv');
+
+// Reg Routes
+Route::get('home/reg', [AuthCustomController::class, 'register']);
+Route::post('home/reg/create', [AuthCustomController::class, 'create'])->name('create');

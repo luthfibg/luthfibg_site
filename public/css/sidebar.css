@@ -19,6 +19,7 @@ body {
     background-color: var(--vulcan);
     transition: all 0.5 ease;
     position: fixed;
+    box-shadow: 3px 0 10px -4px var(--astro-blue);
     top: 0;
     left: 0;
 }

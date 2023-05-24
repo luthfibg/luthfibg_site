@@ -13,7 +13,23 @@ class AuthCustomController extends Controller
     /**
      * Display a listing of the resource.
      */
+    public function register(): Response
+    {
+        return response(view('layouts.register_layout'));
+    }
+
+    /**
+     * Display a listing of the resource.
+     */
     public function index(): Response
+    {
+        return response(view('layouts.authentication_user'));
+    }
+
+    /**
+     * Display a listing of the resource.
+     */
+    public function indexCv(): Response
     {
         return response(view('layouts.authentication'));
     }
@@ -41,6 +57,36 @@ class AuthCustomController extends Controller
             'password' => $request->password,
         ];
         if (Auth::attempt($data)) {
+            return redirect('home/dashboard')->with('success', 'Autentikasi berhasil, selamat datang di dashboard Muhamad Luthfi');
+        } else {
+            return redirect('auth-user')->withErrors('Nama email atau password tidak valid');
+        }
+    }
+
+
+    /**
+     * Process the form for creating a new session.
+     */
+    public function loginCv(Request $request): RedirectResponse
+    {
+        Session::flash('email', $request->emailsc);
+        $request->validate([
+            'email' => 'required|email:rfc|string',
+            'password' => 'required|min:6|max:12',
+        ], [
+                'email.required' => 'Email wajib diisi',
+                'email.email' => 'Email harus mengandung karakter \'@\'',
+                'email.string' => 'Format email seharusnya bukan nomor',
+                'password.required' => 'Password wajib diisi',
+                'password.min' => 'Panjang minimal password adalah 6 karakter',
+                'password.max' => 'Panjang maksimal password adalah 12 karakter',
+            ]);
+
+        $data_user = [
+            'email' => $request->emailsc,
+            'password' => $request->passwordsc,
+        ];
+        if (Auth::attempt($data_user)) {
             return redirect('home/dashboard/downloadcv')->with('success', 'Autentikasi berhasil, sekarang anda dapat mendownload CV');
         } else {
             return redirect('auth')->withErrors('Nama email atau password tidak valid');

@@ -28,7 +28,7 @@
     {{-- Custom CSS --}}
     <link rel="stylesheet" href="{{ asset('css/theme.css') }}">
     <link rel="stylesheet" href="{{ asset('css/breakpoints.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/authentication.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/reg.css') }}">
     {{-- Swiper JS --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -36,9 +36,9 @@
   </head>
   <body style="background-color: var(--mirage);color: var(--ghost) !important;">
 
-    <div class="container-fluid cf-auth">
+    <div class="container-fluid cf-reg">
         @include('components.alert')
-        @include('components.auth_card_duplicate')
+        @include('components.reg_card')
     </div>    
 
     {{-- JS Link Referrer --}}

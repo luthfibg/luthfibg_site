@@ -63,11 +63,14 @@
             <div class="profile-details">
                 <img src="{{ asset('assets/photos/man1.jpg') }}" alt="profile image">
                 <div class="profile-content">
-                    <div class="name">Verda Salman</div>
-                    <div class="designation">Admin</div>
+                    <div class="name">{{ Auth::user()->name }}</div>
+                    <div class="designation">{{ Auth::user()->email }}</div>
                 </div>
             </div>
-            <i class="fa-solid fa-right-from-bracket" id="logout"></i>
+            <a href="" class="a-logout">
+                <i class="fa-solid fa-right-from-bracket" id="logout"></i>
+            </a>
+            {{-- <i class="fa-solid fa-right-from-bracket" id="logout"></i> --}}
         </li>
     </ul>
 </div>

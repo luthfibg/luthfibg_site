@@ -94,7 +94,7 @@ class AuthCustomController extends Controller
     public function logout(): RedirectResponse
     {
         Auth::logout();
-        return redirect('auth')->with('success', 'Anda berhasil keluar');
+        return redirect('auth-user')->with('success', 'Anda berhasil keluar');
     }
 
     /**

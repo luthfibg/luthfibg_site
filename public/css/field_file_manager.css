@@ -1,0 +1,64 @@
+@import "theme.css";
+
+.fmf {
+    position: relative !important;
+    background-color: inherit;
+    min-height: 100vh;
+    top: 0;
+    left: 78px;
+    width: 100%;
+    transition: all 0.5s ease;
+    z-index: 2;
+    padding: 1rem !important;
+}
+
+.fmf .title {
+    /* position: absolute; */
+    margin: 1rem;
+    display: inline-block;
+    color: var(--iron);
+    font-size: 1.6rem;
+}
+
+.fmf .row {
+    width: 100% !important;
+    margin-left: 1rem;
+    border-bottom: 0.08rem solid var(--bright-gray);
+}
+
+.fmf .card .card-title {
+    font-size: 0.9rem;
+}
+
+.fmf .card .action-bar {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+.fmf .card .action-bar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--cerulean);
+    border-radius: 0.2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.4rem;
+    transition: all 0.5s ease;
+}
+.fmf .card .action-bar a:not(.af) {
+    margin-left: 0.5rem;
+}
+
+.fmf .card .action-bar a:hover {
+    transform: scale(1.1);
+}
+
+.fmf .card .action-bar a i {
+    color: var(--vulcan);
+}
+
+.disabled {
+    opacity: 0.5;
+}

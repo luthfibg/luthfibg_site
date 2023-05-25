@@ -25,14 +25,6 @@ class HomeController extends Controller
     }
 
     /**
-     * View CV downloader page
-     */
-    public function cvdwldr(): Response
-    {
-        return response(view("layouts.cvdownloader"));
-    }
-
-    /**
      * View dashboard page
      */
     public function dashboard(): Response

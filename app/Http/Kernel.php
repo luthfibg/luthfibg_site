@@ -66,5 +66,6 @@ class Kernel extends HttpKernel
         'islogged.in' => \App\Http\Middleware\IsLoggedIn::class,
         'islogged.in.reverse' => \App\Http\Middleware\IsLoggedInReverse::class,
         'listing.guest' => \App\Http\Middleware\ListingGuest::class,
+        'multirole.check' => \App\Http\Middleware\MultiroleUserCheck::class,
     ];
 }

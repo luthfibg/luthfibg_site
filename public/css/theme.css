@@ -206,3 +206,7 @@ input[type="submit"] {
     --bs-tooltip-bg: var(--astro-blue);
     --bs-tooltip-color: var(--iron);
 }
+
+.disabled {
+    pointer-events: none;
+}

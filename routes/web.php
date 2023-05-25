@@ -5,6 +5,7 @@ use App\Http\Controllers\GuestController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AuthCustomController;
 use App\Http\Controllers\GoogleController;
+use App\Http\Controllers\DashboardController;
 
 
 
@@ -41,15 +42,18 @@ Route::controller(GuestController::class)->group(function () {
     Route::delete('home/delete/{guest}', 'destroy')->name('guests.delete');
 });
 
-// Home Routes
+// Dashboard Routes
 // Route::get('auth', [HomeController::class, 'create'])->name('login');
-Route::get('home/dashboard/downloadcv', [HomeController::class, 'cvdwldr'])->middleware('islogged.in');
-Route::get('home/dashboard', [HomeController::class, 'dashboard'])->name('dashboard')->middleware('islogged.in');
+Route::get('home/dashboard/downloadcv', [DashboardController::class, 'cvdwldr'])->name('downloadcv')->middleware('islogged.in');
+Route::get('home/dashboard', [DashboardController::class, 'jumpToDashboard'])->name('dashboard')->middleware('islogged.in');
+Route::get('home/messages', [DashboardController::class, 'jumpToMessages'])->name('messages')->middleware('islogged.in');
+Route::get('home/file_manager', [DashboardController::class, 'jumpToFileManager'])->name('file_manager')->middleware('islogged.in');
+Route::get('home/settings', [DashboardController::class, 'jumpToSettings'])->name('settings')->middleware('islogged.in');
 
 // Auth Routes
 Route::get('auth-user', [AuthCustomController::class, 'index'])->middleware('islogged.in.reverse');
 Route::post('auth-user/login', [AuthCustomController::class, 'login'])->name('login.user')->middleware('islogged.in.reverse');
-Route::get('auth-user/logout', [AuthCustomController::class, 'logout'])->name('logout.account')->middleware('islogged.in.reverse');
+Route::get('auth-user/logout', [AuthCustomController::class, 'logout'])->name('logout.account');
 
 Route::get('auth', [AuthCustomController::class, 'indexCv'])->middleware('islogged.in.reverse');
 Route::post('auth/login', [AuthCustomController::class, 'loginCv'])->name('login')->middleware('islogged.in.reverse');

@@ -8,17 +8,17 @@
         <li>
             <i class="fa-solid fa-magnifying-glass"></i>
             <input class="form-control" type="text" placeholder="Cari apa?">
-            <span class="tooltip">Search</span>
+            <span class="tooltip">Pencarian</span>
         </li>
         <li>
-            <a href="">
+            <a href="{{ route('dashboard') }}">
                 <i class="fa-solid fa-rocket"></i>
                 <span class="link-name">Dashboard</span>
             </a>
-            <span class="tooltip">Menu utama</span>
+            <span class="tooltip">Dashboard</span>
         </li>
         <li>
-            <a href="">
+            <a href="{{ route('messages') }}">
                 <i class="fa-solid fa-bell"></i>
                 <span class="link-name">Pesan</span>
             </a>
@@ -32,7 +32,7 @@
             <span class="tooltip">Monitor data</span>
         </li>
         <li>
-            <a href="">
+            <a href="{{ route('file_manager') }}">
                 <i class="fa-solid fa-folder"></i>
                 <span class="link-name">Kelola File</span>
             </a>
@@ -50,7 +50,7 @@
                 <i class="fa-solid fa-gear"></i>
                 <span class="link-name">Pengaturan</span>
             </a>
-            <span class="tooltip">Sesuaikan</span>
+            <span class="tooltip">Pengaturan</span>
         </li>
         <li>
             <a href="">

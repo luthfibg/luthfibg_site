@@ -227,6 +227,7 @@ body {
 }
 
 .sidebar .profile .profile-details {
+    position: relative;
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
@@ -272,6 +273,11 @@ body {
 }
 
 .sidebar.open ~ .df {
+    left: 250px;
+    width: calc(100% - 250px);
+}
+
+.sidebar.open ~ .fmf {
     left: 250px;
     width: calc(100% - 250px);
 }

@@ -27,12 +27,20 @@ class DashboardController extends Controller
     {
         return response(view('pages.settings'));
     }
-    
+
     /**
      * View CV downloader page
      */
     public function cvdwldr(): Response
     {
         return response(view("layouts.cvdownloader"));
+    }
+
+    /**
+     * View CV downloader page
+     */
+    public function jumpToDashboardAddItem(): Response
+    {
+        return response(view("layouts.add_dashboard_item_layout"));
     }
 }

@@ -40,10 +40,10 @@
         </li>
         <li>
             <a href="">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span class="link-name">Pesanan</span>
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <span class="link-name">Peralatan</span>
             </a>
-            <span class="tooltip">Pesanan</span>
+            <span class="tooltip">Peralatan</span>
         </li>
         <li>
             <a href="">

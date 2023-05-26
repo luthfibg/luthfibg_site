@@ -7,7 +7,7 @@
     <div class="row">
         @if (Auth::user()->role == 1)
         <div class="col-12 col-md-3 col-lg-1 col-fs">
-            <a href="" class="btn btn-dashboard fs-btn">
+            <a href="{{ route('dashboard.add.item') }}" class="btn btn-dashboard fs-btn">
                 <i class="fa-solid fa-plus"></i>
                 <span class="btn-pch"> Tambah</span>
             </a>

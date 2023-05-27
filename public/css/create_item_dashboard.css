@@ -1,0 +1,25 @@
+@import "theme.css";
+
+.cf-add-item {
+    margin: 0;
+    padding: 0;
+}
+
+.cf-add-item form {
+    display: flex;
+    width: 100%;
+}
+
+.cf-add-item form > * {
+    width: 50%;
+    height: 100vh;
+    padding: 0 0.5rem;
+}
+
+.cf-add-item form .side-left {
+    padding-right: 1.4rem;
+}
+.cf-add-item form .side-right {
+    border-left: 0.2rem solid var(--raven);
+    padding-left: 1.4rem;
+}

@@ -28,6 +28,7 @@
     {{-- Custom CSS --}}
     <link rel="stylesheet" href="{{ asset('css/theme.css') }}">
     <link rel="stylesheet" href="{{ asset('css/breakpoints.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/create_item_dashboard.css') }}">
 
     {{-- Swiper JS --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />

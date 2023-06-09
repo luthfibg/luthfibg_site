@@ -5,21 +5,35 @@
     padding: 0;
 }
 
-.cf-add-item form {
+/* .cf-add-item form {
     display: flex;
     width: 100%;
-}
+} */
 
-.cf-add-item form > * {
+/* .cf-add-item form > * {
     width: 50%;
     height: 100vh;
     padding: 0 0.5rem;
-}
+} */
 
-.cf-add-item form .side-left {
+/* .cf-add-item form .side-left {
     padding-right: 1.4rem;
-}
-.cf-add-item form .side-right {
+} */
+/* .cf-add-item form .side-right {
     border-left: 0.2rem solid var(--raven);
     padding-left: 1.4rem;
+} */
+
+/* .title-wrapper {
+    margin: 2rem 0 2rem 2rem;
+} */
+
+input,
+select,
+textarea {
+    border-radius: 0.25rem !important;
+}
+
+textarea {
+    resize: none;
 }

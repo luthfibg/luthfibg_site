@@ -32,7 +32,8 @@
             </div>
             <div class="mb-3">
                 <label for="effLvl" class="form-label">Pilih effort level</label>
-                <input type="range" class="form-range" min="1" max="10" step="0.01" id="effLvl" value="1">
+                <input type="range" id="efflevel" class="form-range" min="1" max="10" step="0.01" id="effLvl" value="1" oninput="efflvlOutput.value = efflevel.value">
+                <output id="efflvlOutput">1</output>
             </div>
         </div>
     </div>
@@ -40,7 +41,8 @@
         <div class="card m-3 px-2 px-md-3 py-3 py-md-4">
             <div class="mb-3">
                 <label for="percenTage" class="form-label">Pilih persentase progress</label>
-                <input type="range" class="form-range" min="1" max="100" id="percenTage" value="1">
+                <input type="range" id="pInput" class="form-range" min="0" max="100" id="percenTage" value="1" oninput="pOutput.value = pInput.value">
+                <output id="pOutput">0</output>
             </div>
             <div class="form-floating mb-3">
                 <select class="form-select" aria-label="Default select example">

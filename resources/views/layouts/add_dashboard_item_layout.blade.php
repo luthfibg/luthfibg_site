@@ -40,7 +40,8 @@
     <div class="container-fluid cf-add-item">
         @include('components.alert')
         @include('components.create_item_form')
-    </div>    
+    </div>
+      
 
     {{-- JS Link Referrer --}}
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
@@ -48,6 +49,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 
     {{-- Custom JS --}}
+    <script src="{{ asset('js/ctrl.js') }}"></script>
     <script src="{{ asset('js/input_validate.js') }}"></script>
 
   </body>

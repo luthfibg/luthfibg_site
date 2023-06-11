@@ -103,3 +103,24 @@ function progressLine() {
 // const tooltipList = [...tooltipTriggerList].map(
 //     (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
 // );
+
+// ======================= input range progressed colorize ============================
+
+const range = document.getElementById("efflevel");
+const min = range.min;
+const max = range.max;
+const value = range.value;
+
+range.style.background = `linear-gradient(to right, var(--cerulean) 0%, var(--cerulean) ${
+    ((value - min) / (max - min)) * 100
+}%, var(--bright-gray) ${
+    ((value - min) / (max - min)) * 100
+}%, var(--bright-gray) 100%)`;
+
+range.oninput = function () {
+    this.style.background = `linear-gradient(to right, var(--cerulean) 0%, var(--cerulean) ${
+        ((this.value - this.min) / (this.max - this.min)) * 100
+    }%, var(--bright-gray) ${
+        ((this.value - this.min) / (this.max - this.min)) * 100
+    }%, var(--bright-gray) 100%)`;
+};

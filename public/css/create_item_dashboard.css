@@ -28,6 +28,14 @@
     margin: 2rem 0 2rem 2rem;
 } */
 
+form {
+    width: 100%;
+}
+
+form div {
+    flex-direction: column;
+}
+
 input,
 select,
 textarea {
@@ -43,10 +51,11 @@ output {
 }
 input[type="range"]::-webkit-slider-thumb {
     cursor: pointer;
+    top: -1rem;
     height: 1.5rem;
     width: 1.5rem;
     position: relative;
-    background: url("/assets/icons/spaceship.png") !important;
+    background: url("/assets/icons/fire.png") !important;
     background-size: 100% !important;
     background-repeat: no-repeat !important;
 }
@@ -57,4 +66,9 @@ input[type="range"]::-webkit-slider-thumb::before {
     left: 0;
     width: 100%;
     color: var(--cerulean);
+}
+
+input.submit-form {
+    margin-right: 1rem;
+    align-self: flex-end;
 }

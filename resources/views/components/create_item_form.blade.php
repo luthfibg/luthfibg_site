@@ -39,7 +39,7 @@
             </div>
         </div>
     </div>
-    <div class="col-12 col-md-6 side-right">
+    <div class="col-12 col-md-6 side-right d-flex">
         <div class="card m-3 px-2 px-md-3 py-3 py-md-4">
             <div class="mb-3">
                 <div class="label-wrapper d-flex justify-content-between">
@@ -66,6 +66,6 @@
                 <label for="inputStartDate" class="form-label">Tanggal mulai</label>
             </div>
         </div>
+        <input class="btn btn-sm submit-form" type="button" value="Submit">
     </div>
 </form>
-

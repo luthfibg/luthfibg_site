@@ -170,11 +170,14 @@ select {
 input[type="range"] {
     -webkit-appearance: none;
     appearance: none;
+    /* overflow: hidden; */
     background: transparent !important;
 }
 
 input[type="range"]::-webkit-slider-runnable-track {
     background: var(--bright-gray);
+    -webkit-appearance: none;
+    color: var(--cerulean);
     height: 0.3rem;
 }
 
@@ -190,6 +193,21 @@ input[type="range"]::-webkit-slider-thumb {
     background-color: var(--cerulean);
     height: 1.5rem;
     width: 1rem;
+}
+
+/** FF*/
+input[type="range"]::-moz-range-progress {
+    background-color: var(--cerulean);
+}
+input[type="range"]::-moz-range-track {
+    background-color: var(--bright-gray);
+}
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+    background-color: var(--cerulean);
+}
+input[type="range"]::-ms-fill-upper {
+    background-color: var(--bright-gray);
 }
 
 input::placeholder {

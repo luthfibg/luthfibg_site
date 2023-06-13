@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ItemController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GuestController;
 use App\Http\Controllers\HomeController;
@@ -67,3 +68,6 @@ Route::get('auth/google/callback/cv', [GoogleController::class, 'googleCallBackH
 // Reg Routes
 Route::get('home/reg', [AuthCustomController::class, 'register']);
 Route::post('home/reg/create', [AuthCustomController::class, 'create'])->name('create');
+
+// Layer 2: Items Routes
+Route::resource('home/dashboard/items', ItemController::class);

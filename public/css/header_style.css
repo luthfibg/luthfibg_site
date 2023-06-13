@@ -64,13 +64,18 @@ header.header .header-inner {
     color: var(--cerulean);
 }
 
-nav.navbar-c a {
+nav.navbar-c a,
+.outskirt-link {
     position: relative;
     font-size: 1.1rem;
     color: var(--cerulean);
     font-weight: 200;
     margin-right: 1.5rem;
     transition: 0.7s;
+}
+
+.outskirt-link {
+    font-weight: 400;
 }
 
 .navbar-c a.active::before {

@@ -5,6 +5,9 @@
     padding: 0;
 }
 
+.cf-add-item ul li {
+    list-style-type: decimal;
+}
 /* .cf-add-item form {
     display: flex;
     width: 100%;
@@ -71,4 +74,8 @@ input[type="range"]::-webkit-slider-thumb::before {
 input.submit-form {
     margin-right: 1rem;
     align-self: flex-end;
+}
+
+.side-right input.btn {
+    box-shadow: none !important;
 }

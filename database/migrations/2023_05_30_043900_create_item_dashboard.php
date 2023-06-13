@@ -20,7 +20,7 @@ return new class extends Migration {
             $table->integer('percentage')->default('0');
             $table->enum('status', ['rencana', 'proses', 'selesai']);
             $table->text('description');
-            $table->date('started_at')->useCurrent();
+            $table->date('started_at')->nullable();
             $table->date('finished_at')->nullable();
             $table->timestamps();
         });

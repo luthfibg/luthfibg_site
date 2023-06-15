@@ -28,7 +28,8 @@
     {{-- Custom CSS --}}
     <link rel="stylesheet" href="{{ asset('css/theme.css') }}">
     <link rel="stylesheet" href="{{ asset('css/breakpoints.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/reg.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/create_item_dashboard.css') }}">
+
     {{-- Swiper JS --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -36,10 +37,11 @@
   </head>
   <body style="background-color: var(--mirage);color: var(--ghost) !important;">
 
-    <div class="container-fluid cf-reg">
+    <div class="container-fluid cf-add-item">
         @include('components.alert')
-        @include('components.reg_card')
-    </div>    
+        @yield('content')
+    </div>
+      
 
     {{-- JS Link Referrer --}}
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>

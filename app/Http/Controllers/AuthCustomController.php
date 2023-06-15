@@ -18,7 +18,7 @@ class AuthCustomController extends Controller
      */
     public function index(): Response
     {
-        return response(view('layouts.authentication_user'));
+        return response(view('components.auth_card'));
     }
 
     /**
@@ -102,7 +102,7 @@ class AuthCustomController extends Controller
      */
     public function register(): Response
     {
-        return response(view('layouts.register_layout'));
+        return response(view('components.reg_card'));
     }
 
 

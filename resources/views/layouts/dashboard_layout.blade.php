@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="{{ asset('css/breakpoints.css') }}">
     <link rel="stylesheet" href="{{ asset('css/sidebar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/dashboard_field.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/item_card.css') }}">
     {{-- <link rel="stylesheet" href="{{ asset('css/preloader.css') }}"> --}}
     
     {{-- Swiper JS --}}

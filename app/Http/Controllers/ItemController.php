@@ -15,7 +15,8 @@ class ItemController extends Controller
      */
     public function index(): Response
     {
-        return response(view('pages.dashboard'));
+        $data = Item::orderby('name', 'desc')->get();
+        return response(view('pages.dashboard')->with('data', $data));
     }
 
     /**
@@ -51,16 +52,16 @@ class ItemController extends Controller
             'status' => 'required',
             'description' => 'required',
         ], [
-                'name.required' => 'Nama tidak boleh kosong',
-                'name.min' => 'Nama minimal terdiri atas 4 karakter selain spasi',
-                'name.max' => 'Nama maksimal terdiri atas 55 karakter selain spasi',
-                'subname.required' => 'Sub nama tidak boleh kosong',
-                'category.required' => 'Anda harus memilih kategori',
-                'effort_level.required' => 'Anda harus mencantumkan tingkat usaha',
-                'percentage.required' => 'Anda harus mencantumkan persentase progres saat ini',
-                'status.required' => 'Anda harus mencantumkan status saat ini',
-                'description.required' => 'Anda harus mencantumkan deskripsi',
-            ]);
+            'name.required' => 'Nama tidak boleh kosong',
+            'name.min' => 'Nama minimal terdiri atas 4 karakter selain spasi',
+            'name.max' => 'Nama maksimal terdiri atas 55 karakter selain spasi',
+            'subname.required' => 'Sub nama tidak boleh kosong',
+            'category.required' => 'Anda harus memilih kategori',
+            'effort_level.required' => 'Anda harus mencantumkan tingkat usaha',
+            'percentage.required' => 'Anda harus mencantumkan persentase progres saat ini',
+            'status.required' => 'Anda harus mencantumkan status saat ini',
+            'description.required' => 'Anda harus mencantumkan deskripsi',
+        ]);
         $data = [
             //left-side
             'name' => $request->name,

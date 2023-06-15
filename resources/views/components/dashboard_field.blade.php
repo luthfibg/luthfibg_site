@@ -4,7 +4,7 @@
         <div class="title">Dashboard</div>
         <div class="subtitle">What do i do now?</div>
     </div>
-    <div class="row">
+    <div class="row head">
         @if (Auth::user()->role == 1)
         <div class="col-12 col-md-3 col-lg-1 col-fs">
             <a href="{{ route('dashboard.add.item') }}" class="btn btn-dashboard fs-btn">
@@ -55,6 +55,15 @@
                 <span class="btn-pch"> Riwayat</span>
             </a>
         </div>
-     
+    </div>
+    <div class="row row-cols-4">
+        {{-- @foreach ($collection as $item)
+            
+        @endforeach --}}
+        @include('models.item_card')
+        @include('models.item_card')
+        @include('models.item_card')
+        @include('models.item_card')
+        @include('models.item_card')
     </div>
 </section>

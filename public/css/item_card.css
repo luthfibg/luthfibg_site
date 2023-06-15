@@ -1,0 +1,41 @@
+@import "theme.css";
+.card-link {
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: var(--cerulean);
+}
+
+.card-link .cl-fs {
+    padding-left: 0 !important;
+}
+
+h6.card-subtitle {
+    color: var(--gray-chateau) !important;
+}
+
+.card h5 {
+    font-size: 1.05rem;
+}
+
+.card:not(h5),
+.card .card-body p {
+    font-size: 0.85rem !important;
+}
+
+i.fa-atom {
+    color: var(--byzantium);
+}
+i.fa-fire {
+    color: var(--crimson);
+}
+i.fa-percent {
+    color: var(--amber);
+}
+i.fa-clipboard-check {
+    color: var(--eucalyptus);
+}
+
+.span-wrapper span {
+    color: var(--bright-gray) !important;
+}

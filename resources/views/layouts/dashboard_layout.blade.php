@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="{{ asset('css/breakpoints.css') }}">
     <link rel="stylesheet" href="{{ asset('css/sidebar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/dashboard_field.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/item_card.css') }}">
     {{-- <link rel="stylesheet" href="{{ asset('css/preloader.css') }}"> --}}
     
     {{-- Swiper JS --}}
@@ -49,7 +50,7 @@
   <body style="background-color: var(--mirage);color: var(--ghost) !important;">
     
 
-    <div class="container" style="display: flex;padding: 0;">
+    <div class="container" style="display: flex;padding: 0;width:100vw;">
       @include('components.sidebar')
       @yield('content')  
     </div>

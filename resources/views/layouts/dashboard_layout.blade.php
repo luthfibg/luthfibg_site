@@ -50,7 +50,7 @@
   <body style="background-color: var(--mirage);color: var(--ghost) !important;">
     
 
-    <div class="container" style="display: flex;padding: 0;">
+    <div class="container" style="display: flex;padding: 0;width:100vw;">
       @include('components.sidebar')
       @yield('content')  
     </div>

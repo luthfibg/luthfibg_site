@@ -56,10 +56,14 @@
             </a>
         </div>
     </div>
-    <div class="row">
+    <div class="row row-cols-4">
         {{-- @foreach ($collection as $item)
             
         @endforeach --}}
+        @include('models.item_card')
+        @include('models.item_card')
+        @include('models.item_card')
+        @include('models.item_card')
         @include('models.item_card')
     </div>
 </section>

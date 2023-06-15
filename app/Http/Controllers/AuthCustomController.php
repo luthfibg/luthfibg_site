@@ -39,20 +39,20 @@ class AuthCustomController extends Controller
             'email' => 'required|email:rfc|string',
             'password' => 'required|min:6|max:12',
         ], [
-                'email.required' => 'Email wajib diisi',
-                'email.email' => 'Email harus mengandung karakter \'@\'',
-                'email.string' => 'Format email seharusnya bukan nomor',
-                'password.required' => 'Password wajib diisi',
-                'password.min' => 'Panjang minimal password adalah 6 karakter',
-                'password.max' => 'Panjang maksimal password adalah 12 karakter',
-            ]);
+            'email.required' => 'Email wajib diisi',
+            'email.email' => 'Email harus mengandung karakter \'@\'',
+            'email.string' => 'Format email seharusnya bukan nomor',
+            'password.required' => 'Password wajib diisi',
+            'password.min' => 'Panjang minimal password adalah 6 karakter',
+            'password.max' => 'Panjang maksimal password adalah 12 karakter',
+        ]);
 
         $data = [
             'email' => $request->email,
             'password' => $request->password,
         ];
         if (Auth::attempt($data)) {
-            return redirect('home/dashboard')->with('success', 'Autentikasi berhasil, selamat datang kembali di dashboard Muhamad Luthfi');
+            return redirect('home/dashboard/items')->with('success', 'Autentikasi berhasil, selamat datang kembali di dashboard Muhamad Luthfi');
         } else {
             return redirect('auth-user')->withErrors('Nama email atau password tidak valid');
         }
@@ -69,13 +69,13 @@ class AuthCustomController extends Controller
             'email' => 'required|email:rfc|string',
             'password' => 'required|min:6|max:12',
         ], [
-                'email.required' => 'Email wajib diisi',
-                'email.email' => 'Email harus mengandung karakter \'@\'',
-                'email.string' => 'Format email seharusnya bukan nomor',
-                'password.required' => 'Password wajib diisi',
-                'password.min' => 'Panjang minimal password adalah 6 karakter',
-                'password.max' => 'Panjang maksimal password adalah 12 karakter',
-            ]);
+            'email.required' => 'Email wajib diisi',
+            'email.email' => 'Email harus mengandung karakter \'@\'',
+            'email.string' => 'Format email seharusnya bukan nomor',
+            'password.required' => 'Password wajib diisi',
+            'password.min' => 'Panjang minimal password adalah 6 karakter',
+            'password.max' => 'Panjang maksimal password adalah 12 karakter',
+        ]);
 
         $data_user = [
             'email' => $request->emailsc,
@@ -118,16 +118,16 @@ class AuthCustomController extends Controller
             'email' => 'required|email:rfc|string|unique:users',
             'password' => 'required|min:6|max:12',
         ], [
-                'name.required' => 'Nama wajib diisi',
-                'name.string' => 'Nama tidak boleh mengandung angka',
-                'email.required' => 'Email wajib diisi',
-                'email.email' => 'Email harus mengandung karakter \'@\'',
-                'email.string' => 'Format email seharusnya bukan nomor',
-                'email.unique' => 'Email tersebut telah terdaftar',
-                'password.required' => 'Password wajib diisi',
-                'password.min' => 'Panjang minimal password adalah 6 karakter',
-                'password.max' => 'Panjang maksimal password adalah 12 karakter',
-            ]);
+            'name.required' => 'Nama wajib diisi',
+            'name.string' => 'Nama tidak boleh mengandung angka',
+            'email.required' => 'Email wajib diisi',
+            'email.email' => 'Email harus mengandung karakter \'@\'',
+            'email.string' => 'Format email seharusnya bukan nomor',
+            'email.unique' => 'Email tersebut telah terdaftar',
+            'password.required' => 'Password wajib diisi',
+            'password.min' => 'Panjang minimal password adalah 6 karakter',
+            'password.max' => 'Panjang maksimal password adalah 12 karakter',
+        ]);
 
         $data = [
             'name' => $request->name,
@@ -141,7 +141,7 @@ class AuthCustomController extends Controller
             'password' => $request->password,
         ];
         if (Auth::attempt($login)) {
-            return redirect('home/dashboard')->with('success', 'Registrasi berhasil, selamat datang ' . Auth::user()->name . ', di akun barumu di dashboard Muhamad Luthfi');
+            return redirect('home/dashboard/items')->with('success', 'Registrasi berhasil, selamat datang ' . Auth::user()->name . ', di akun barumu di dashboard Muhamad Luthfi');
         } else {
             return redirect('home/reg')->withErrors('Periksa kembali inputan anda');
         }

@@ -46,7 +46,7 @@ Route::controller(GuestController::class)->group(function () {
 // Dashboard Routes
 // Route::get('auth', [HomeController::class, 'create'])->name('login');
 Route::get('home/dashboard/downloadcv', [DashboardController::class, 'cvdwldr'])->name('downloadcv')->middleware('islogged.in');
-Route::get('home/dashboard', [DashboardController::class, 'jumpToDashboard'])->name('dashboard')->middleware('islogged.in');
+Route::get('home/dashboard/', [DashboardController::class, 'jumpToDashboard'])->name('dashboard')->middleware('islogged.in');
 Route::get('home/messages', [DashboardController::class, 'jumpToMessages'])->name('messages')->middleware('islogged.in');
 Route::get('home/file_manager', [DashboardController::class, 'jumpToFileManager'])->name('file_manager')->middleware('islogged.in');
 Route::get('home/settings', [DashboardController::class, 'jumpToSettings'])->name('settings')->middleware('islogged.in');

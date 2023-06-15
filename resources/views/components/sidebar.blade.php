@@ -11,7 +11,7 @@
             <span class="tooltip">Pencarian</span>
         </li>
         <li>
-            <a href="{{ route('dashboard') }}">
+            <a href="{{ url('home/dashboard/items') }}">
                 <i class="fa-solid fa-rocket"></i>
                 <span class="link-name">Dashboard</span>
             </a>
@@ -67,7 +67,7 @@
                     <div class="designation">{{ Auth::user()->email }}</div>
                 </div>
             </div>
-            <a href="{{ route('logout.account') }}" class="a-logout">
+            <a href="{{ route('logout.account') }}" class="a-logout" id="logoutLink" data-id="{{ Auth::user()->id }}">
                 <i class="fa-solid fa-right-from-bracket" id="logout"></i>
             </a>
             {{-- <i class="fa-solid fa-right-from-bracket" id="logout"></i> --}}

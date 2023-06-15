@@ -39,5 +39,16 @@
     <div class="card-footer">
         <a href="#" class="card-link cl-fs">Detail</a>
         <a href="#" class="card-link">Github</a>
+        @if (Auth::user()->role == 1)
+            <a href="{{ url('home/dashboard/items/'.$item->id.'/edit') }}" class="card-link">Perbarui</a>
+        @else
+            <a href="#" class="card-link disabled">Perbarui</a>
+        @endif
+
+        @if (Auth::user()->role == 1)
+            <a href="#" class="card-link">Bunuh</a>
+        @else
+            <a href="#" class="card-link disabled">Bunuh</a>
+        @endif
     </div>
 </div>

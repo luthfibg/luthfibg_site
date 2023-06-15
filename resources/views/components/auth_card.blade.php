@@ -1,3 +1,6 @@
+@extends('layouts.authentication_user')
+
+@section('auth-reg')
 <div class="cwr">
     <input type="checkbox" id="chk" aria-hidden="true" name="">
     <div class="card">
@@ -74,3 +77,5 @@
         </div>
     </div>
 </div>
+@endsection
+

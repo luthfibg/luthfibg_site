@@ -29,6 +29,8 @@
     <link rel="stylesheet" href="{{ asset('css/theme.css') }}">
     <link rel="stylesheet" href="{{ asset('css/breakpoints.css') }}">
     <link rel="stylesheet" href="{{ asset('css/authentication.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/reg.css') }}">
+    
     {{-- Swiper JS --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -38,7 +40,7 @@
 
     <div class="container-fluid cf-auth">
         @include('components.alert')
-        @include('components.auth_card')
+        @yield('auth-reg')
     </div>    
 
     {{-- JS Link Referrer --}}

@@ -1,5 +1,5 @@
-@extends('layouts.file_manager_layout')
+@extends('layouts.dashboard_layout')
 
-@section('content-fm')
+@section('content')
     @include('components.field_file_manager')
 @endsection

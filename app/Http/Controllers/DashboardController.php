@@ -41,6 +41,6 @@ class DashboardController extends Controller
      */
     public function jumpToDashboardAddItem(): Response
     {
-        return response(view("layouts.add_dashboard_item_layout"));
+        return response(view("layouts.items_manager_layout"));
     }
 }

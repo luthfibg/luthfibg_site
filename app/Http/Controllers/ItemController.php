@@ -24,7 +24,7 @@ class ItemController extends Controller
      */
     public function create(): Response
     {
-        return response();
+        return response(view('pages.add_item'));
     }
 
     /**

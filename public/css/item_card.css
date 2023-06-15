@@ -10,6 +10,10 @@
     padding-left: 0 !important;
 }
 
+.card-link.disabled {
+    opacity: 0.6;
+}
+
 h6.card-subtitle {
     color: var(--gray-chateau) !important;
 }

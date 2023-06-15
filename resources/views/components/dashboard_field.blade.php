@@ -57,13 +57,8 @@
         </div>
     </div>
     <div class="row row-cols-4">
-        {{-- @foreach ($collection as $item)
-            
-        @endforeach --}}
-        @include('models.item_card')
-        @include('models.item_card')
-        @include('models.item_card')
-        @include('models.item_card')
-        @include('models.item_card')
+        @foreach ($data as $item)
+            @include('models.item_card')
+        @endforeach
     </div>
 </section>

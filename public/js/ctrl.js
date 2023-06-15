@@ -124,3 +124,29 @@ range.oninput = function () {
         ((this.value - this.min) / (this.max - this.min)) * 100
     }%, var(--bright-gray) 100%)`;
 };
+
+// ======================= logout confirmation dialog ============================
+
+$(document).on("click", "#logoutLink", function (e) {
+    e.preventDefault();
+    var id = $(this).data("id");
+    swal(
+        {
+            title: "Apakah anda yakin ingin keluar?",
+            type: "error",
+            confirmButtonClass: "btn-danger",
+            confirmButtonText: "Ya!",
+            showCancelButton: true,
+        },
+        function () {
+            $.ajax({
+                type: "POST",
+                url: "{{ route('logout.account') }}",
+                data: { id: id },
+                success: function (data) {
+                    //
+                },
+            });
+        }
+    );
+});

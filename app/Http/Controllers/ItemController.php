@@ -13,10 +13,10 @@ class ItemController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index(): Response
+    public function index()
     {
         $data = Item::orderby('name', 'desc')->get();
-        return response(view('pages.dashboard')->with('data', $data));
+        return view('pages.dashboard', ['data' => $data]);
     }
 
     /**

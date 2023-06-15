@@ -78,7 +78,7 @@ class ItemController extends Controller
         ];
 
         Item::create($data);
-        return redirect('home/dashboard/items')->with('success', 'Data berhasil disimpan');
+        return redirect('home/dashboard/items')->with('success', 'Kartu berhasil ditambahkan');
     }
 
     /**
@@ -92,9 +92,10 @@ class ItemController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id): Response
+    public function edit($id): Response
     {
-        return response();
+        $data = Item::where('id', $id)->first();
+        return response(view('pages.edit_item')->with('data', $data));
     }
 
     /**
@@ -102,7 +103,53 @@ class ItemController extends Controller
      */
     public function update(Request $request, string $id): RedirectResponse
     {
-        return redirect();
+        Session::flash('name', $request->name);
+        Session::flash('subname', $request->subname);
+        Session::flash('category', $request->category);
+        Session::flash('sub_category', $request->sub_category);
+        Session::flash('effort_level', $request->effort_level);
+        Session::flash('percentage', $request->percentage);
+        Session::flash('status', $request->status);
+        Session::flash('description', $request->description);
+        Session::flash('start_date', $request->start_date);
+
+        $request->validate([
+            'name' => 'required|min:4|max:55',
+            'subname' => 'required',
+            'category' => 'required',
+            // 'subcategory' => 'required',
+            'effort_level' => 'required',
+            'percentage' => 'required',
+            'status' => 'required',
+            'description' => 'required',
+        ], [
+            'name.required' => 'Nama tidak boleh kosong',
+            'name.min' => 'Nama minimal terdiri atas 4 karakter selain spasi',
+            'name.max' => 'Nama maksimal terdiri atas 55 karakter selain spasi',
+            'subname.required' => 'Sub nama tidak boleh kosong',
+            'category.required' => 'Anda harus memilih kategori',
+            'effort_level.required' => 'Anda harus mencantumkan tingkat usaha',
+            'percentage.required' => 'Anda harus mencantumkan persentase progres saat ini',
+            'status.required' => 'Anda harus mencantumkan status saat ini',
+            'description.required' => 'Anda harus mencantumkan deskripsi',
+        ]);
+        $data = [
+            //left-side
+            'name' => $request->name,
+            'subname' => $request->subname,
+            'category' => $request->category,
+            'sub_category' => $request->sub_category,
+            'effort_level' => $request->effort_level,
+
+            //right-side
+            'percentage' => $request->percentage,
+            'status' => $request->status,
+            'description' => $request->description,
+            'started_at' => $request->start_date,
+        ];
+
+        Item::where('id', $id)->update($data);
+        return redirect('home/dashboard/items')->with('success', 'Kartu berhasil diperbarui');
     }
 
     /**
@@ -110,6 +157,7 @@ class ItemController extends Controller
      */
     public function destroy(string $id): RedirectResponse
     {
-        return redirect();
+        Item::where('id', $id)->delete();
+        return redirect('home/dashboard/items')->with('success', 'Kartu berhasil dibunuh');
     }
 }

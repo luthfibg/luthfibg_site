@@ -36,7 +36,7 @@
             <span style="color: var(--cerulean);">{{ $item->status }}</span>
         </p>
     </div>
-    <div class="card-footer">
+    <div class="card-footer px-2">
         <a href="#" class="card-link cl-fs">Detail</a>
         <a href="#" class="card-link">Github</a>
         @if (Auth::user()->role == 1)
@@ -46,7 +46,12 @@
         @endif
 
         @if (Auth::user()->role == 1)
-            <a href="#" class="card-link">Bunuh</a>
+            <form action="{{ url('home/dashboard/items/'.$item->id) }}" method="post" class="" onsubmit="return confirm('Apakah anda yakin ingin membunuhnya?')">
+                @csrf
+                @method("DELETE")
+                <button type="submit" class="btn btn-danger w-100 h-100" style="background: none !important;border: none !important;color: var(--cerulean) !important;box-shadow: none !important;padding: 0 !important;margin-left: 0.4rem;" value="Bunuh">Bunuh</button>
+            </form>
+            {{-- <a href="" class="card-link">Bunuh</a> --}}
         @else
             <a href="#" class="card-link disabled">Bunuh</a>
         @endif

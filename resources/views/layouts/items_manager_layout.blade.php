@@ -39,7 +39,7 @@
 
     <div class="container-fluid cf-add-item">
         @include('components.alert')
-        @include('components.create_item_form')
+        @yield('content')
     </div>
       
 

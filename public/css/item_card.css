@@ -23,8 +23,10 @@ h6.card-subtitle {
 }
 
 .card:not(h5),
-.card .card-body p {
+.card .card-body p,
+.card .card-footer button {
     font-size: 0.85rem !important;
+    font-weight: 400 !important;
 }
 
 i.fa-atom {

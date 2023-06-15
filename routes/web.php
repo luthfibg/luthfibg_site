@@ -50,7 +50,6 @@ Route::get('home/dashboard/', [DashboardController::class, 'jumpToDashboard'])->
 Route::get('home/messages', [DashboardController::class, 'jumpToMessages'])->name('messages')->middleware('islogged.in');
 Route::get('home/file_manager', [DashboardController::class, 'jumpToFileManager'])->name('file_manager')->middleware('islogged.in');
 Route::get('home/settings', [DashboardController::class, 'jumpToSettings'])->name('settings')->middleware('islogged.in');
-Route::get('home/dashboard/add_item', [DashboardController::class, 'jumpToDashboardAddItem'])->name('dashboard.add.item')->middleware('islogged.in');
 
 // Auth Routes
 Route::get('auth-user', [AuthCustomController::class, 'index'])->middleware('islogged.in.reverse');
@@ -71,3 +70,4 @@ Route::post('home/reg/create', [AuthCustomController::class, 'create'])->name('c
 
 // Layer 2: Items Routes
 Route::resource('home/dashboard/items', ItemController::class);
+Route::get('home/dashboard/add_item', [ItemController::class, 'create'])->name('dashboard.add.item')->middleware('islogged.in');

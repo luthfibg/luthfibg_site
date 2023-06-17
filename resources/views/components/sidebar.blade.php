@@ -1,9 +1,5 @@
 <div class="sidebar">
-    <div class="logo-details">
-        <i class="fa-brands fa-keycdn icon"></i>
-        <div class="logo-name">Lunatika</div>
-        <i class="fa-solid fa-bars" id="btn"></i>
-    </div>
+    <div class="logo-details" id="logoC"></div>
     <ul class="nav-list">
         <li>
             <i class="fa-solid fa-magnifying-glass"></i>

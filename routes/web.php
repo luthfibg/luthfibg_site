@@ -3,7 +3,7 @@
 use App\Http\Controllers\ItemController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GuestController;
-use App\Http\Controllers\HomeController;
+// use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AuthCustomController;
 use App\Http\Controllers\GoogleController;
 use App\Http\Controllers\DashboardController;

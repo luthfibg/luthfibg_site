@@ -15,7 +15,8 @@
         "laravel/socialite": "^5.6",
         "laravel/tinker": "^2.7",
         "livewire/livewire": "^2.12",
-        "reliese/laravel": "^1.2"
+        "reliese/laravel": "^1.2",
+        "rtconner/laravel-tagging": "^4.1"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.8",

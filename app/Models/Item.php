@@ -7,6 +7,8 @@
 namespace App\Models;
 
 use Carbon\Carbon;
+use Conner\Tagging\Taggable;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -30,6 +32,9 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Item extends Model
 {
+	use HasFactory;
+	use Taggable;
+
 	protected $table = 'items';
 
 	protected $dates = [

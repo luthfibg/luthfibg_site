@@ -67,6 +67,13 @@
                 <label for="descripTion" class="form-label">Masukkan deskripsi</label>
             </div>
             <div class="form-floating mb-3">
+                <input type="text" class="form-control" data-role="tagsinput" name="tags" id="inputTags">
+                <label for="inputTags" class="form-label">Teknologi</label>
+                @if ($errors->has('tags'))
+                    <span class="text-danger">{{ $errors->first('tags') }}</span>
+                @endif
+            </div>
+            <div class="form-floating mb-3">
                 <input type="date" class="form-control" name="start_date" id="inputStartDate" value="{{ Session::get('start_date') }}">
                 <label for="inputStartDate" class="form-label">Tanggal mulai</label>
             </div>

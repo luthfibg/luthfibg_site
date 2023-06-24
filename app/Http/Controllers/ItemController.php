@@ -76,8 +76,9 @@ class ItemController extends Controller
             'description' => $request->description,
             'start_date' => $request->start_date,
         ];
-
-        Item::create($data);
+        $tags = explode(",", $request->tags);
+        $store = Item::create($data);
+        $store->tag($tags);
         return redirect('home/dashboard/items')->with('success', 'Kartu berhasil ditambahkan');
     }
 

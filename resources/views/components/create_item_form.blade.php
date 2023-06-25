@@ -66,9 +66,10 @@
                 <textarea class="form-control" name="description" id="descripTion" rows="5" placeholder="Deskripsi..." style="height: 8rem;" value="{{ Session::get('description') }}"></textarea>
                 <label for="descripTion" class="form-label">Masukkan deskripsi</label>
             </div>
-            <div class="form-floating mb-3">
+            <div class="mb-3">
+                <label for="inputTags" class="tag-label">Masukan tag, gunakan "," sebagai pemisah</label>
                 <input type="text" class="form-control" data-role="tagsinput" name="tags" id="inputTags">
-                <label for="inputTags" class="form-label">Teknologi</label>
+                {{-- <label for="inputTags" class="form-label">Teknologi</label> --}}
                 @if ($errors->has('tags'))
                     <span class="text-danger">{{ $errors->first('tags') }}</span>
                 @endif

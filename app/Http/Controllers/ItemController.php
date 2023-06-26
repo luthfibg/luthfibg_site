@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Session;
 class ItemController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a listing of the item card.
      */
     public function index()
     {
@@ -20,7 +20,7 @@ class ItemController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Show the form for creating a new item card.
      */
     public function create(): Response
     {
@@ -28,7 +28,7 @@ class ItemController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created item card in storage.
      */
     public function store(Request $request): RedirectResponse
     {
@@ -83,15 +83,16 @@ class ItemController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Display the specified item card.
      */
-    public function show(string $id): Response
+    public function show($id): Response
     {
-        return response();
+        $item = Item::where('id', $id)->first();
+        return response(view('pages.item_detail')->with('item', $item));
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Show the form for editing the specified item card.
      */
     public function edit($id): Response
     {
@@ -100,7 +101,7 @@ class ItemController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update the specified item card in storage.
      */
     public function update(Request $request, string $id): RedirectResponse
     {
@@ -160,7 +161,7 @@ class ItemController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the specified item card from storage.
      */
     public function destroy(string $id): RedirectResponse
     {

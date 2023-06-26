@@ -150,9 +150,10 @@ class ItemController extends Controller
             'started_at' => $request->start_date,
         ];
 
+        $item = Item::find($id);
         $tags = explode(",", $request->tags);
-        $store_update = Item::where('id', $id)->update($data);
-        $store_update->tag($tags);
+        $item->retag($tags);
+        Item::where('id', $id)->update($data);
 
         // $user1 = Auth::user();        
         // $user2 = Input::get('id');

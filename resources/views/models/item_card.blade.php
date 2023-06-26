@@ -12,13 +12,18 @@
         <p class="card-text">
             <i class="fa-solid fa-atom"></i> &nbsp;Teknologi
         </p>
-        <div class="span-wrapper d-flex mb-3 flex-wrap">
+        <div class="tags-wrapper mt-1 mb-3">
+            @foreach($item->tags as $tag)
+                <span class="badge rounded-pill text-bg-info me-1 mb-1 badge-tag">{{ $tag->name }}</span>
+            @endforeach
+        </div>
+        {{-- <div class="span-wrapper d-flex mb-3 flex-wrap">
             <span class="badge rounded-pill text-bg-info me-1 mb-1">html-css</span>
             <span class="badge rounded-pill text-bg-info me-1 mb-1">javascript</span>
             <span class="badge rounded-pill text-bg-info me-1 mb-1">ht6 sensorik</span>
             <span class="badge rounded-pill text-bg-info me-1 mb-1">raspberry</span>
             <span class="badge rounded-pill text-bg-info me-1 mb-1">hvu carbu sensor</span>
-        </div>
+        </div> --}}
         <p class="card-text">
             <i class="fa-solid fa-fire"></i> &nbsp;Tingkat Kesulitan
         </p>

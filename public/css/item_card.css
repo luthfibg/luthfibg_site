@@ -45,3 +45,8 @@ i.fa-clipboard-check {
 .span-wrapper span {
     color: var(--bright-gray) !important;
 }
+
+.card .card-body .badge-tag {
+    color: var(--mirage) !important;
+    background: var(--cerulean) !important;
+}

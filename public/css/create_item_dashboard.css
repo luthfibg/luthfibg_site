@@ -79,3 +79,19 @@ input.submit-form {
 .side-right input.btn {
     box-shadow: none !important;
 }
+.bootstrap-tagsinput {
+    background: var(--bright-gray);
+    border: none;
+}
+.bootstrap-tagsinput .tag {
+    color: var(--mirage);
+    background: var(--cerulean);
+    font-size: 0.8rem;
+    border-radius: 0.2rem;
+    padding: 0.1rem 0.3rem;
+}
+
+.tag-label {
+    font-size: 0.8rem;
+    margin-right: 1rem;
+}

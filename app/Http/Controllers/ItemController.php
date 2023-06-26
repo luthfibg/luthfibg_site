@@ -149,7 +149,13 @@ class ItemController extends Controller
             'started_at' => $request->start_date,
         ];
 
-        Item::where('id', $id)->update($data);
+        $tags = explode(",", $request->tags);
+        $store_update = Item::where('id', $id)->update($data);
+        $store_update->tag($tags);
+
+        // $user1 = Auth::user();        
+        // $user2 = Input::get('id');
+        // $user1->follow(User::find($user2));
         return redirect('home/dashboard/items')->with('success', 'Kartu berhasil diperbarui');
     }
 

@@ -66,6 +66,14 @@
                 <textarea class="form-control" name="description" id="descripTion" rows="5" placeholder="Deskripsi..." style="height: 8rem;" value="{{ Session::get('description') }}"></textarea>
                 <label for="descripTion" class="form-label">Masukkan deskripsi</label>
             </div>
+            <div class="mb-3">
+                <label for="inputTags" class="tag-label">Masukan tag, gunakan "," sebagai pemisah</label>
+                <input type="text" class="form-control" data-role="tagsinput" name="tags" id="inputTags" value="@foreach ($data->tags as $tag) {{ $tag->name }} @if (!$loop->last), @endif @endforeach">
+                {{-- <label for="inputTags" class="form-label">Teknologi</label> --}}
+                @if ($errors->has('tags'))
+                    <span class="text-danger">{{ $errors->first('tags') }}</span>
+                @endif
+            </div>
             <div class="form-floating mb-3">
                 <input type="date" class="form-control" name="start_date" id="inputStartDate" value="{{ $data->start_date }}">
                 <label for="inputStartDate" class="form-label">Tanggal mulai</label>
